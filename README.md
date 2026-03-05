@@ -17,7 +17,11 @@ cd phase5 && npm install
 
 # 3. Run full stack
 ./run_all.sh
-# → UI: http://localhost:5173  |  Streamlit: ./run_streamlit.sh → http://localhost:5175
+# → UI: http://localhost:5173
+
+# Or run Streamlit (starts backend automatically)
+./run_streamlit.sh
+# → Streamlit: http://localhost:5175
 ```
 
 ## Deploy to Streamlit Cloud

@@ -277,8 +277,14 @@ if submitted:
                 )
             except requests.RequestException as e:
                 err = str(e) or "Failed to load recommendations."
-                if "Connection" in err or "fetch" in err.lower():
-                    st.error("Could not connect to the server. Make sure the backend is running on port 8000.")
+                base = _get_api_base_url()
+                if "Connection" in err or "fetch" in err.lower() or "refused" in err.lower():
+                    st.error(
+                        "**Could not connect to the backend API.**\n\n"
+                        "• **Local run:** Start the backend first: `./run_backend.sh` (or use `./run_streamlit.sh` which starts both).\n"
+                        "• **Streamlit Cloud:** Deploy the backend to Render/Railway and set `API_BASE_URL` in your app secrets."
+                    )
+                    st.caption(f"Trying to reach: {base}")
                 else:
                     st.error(err)
             else:
