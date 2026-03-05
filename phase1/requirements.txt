@@ -1,0 +1,9 @@
+# Phase 1: Data access
+# Python 3.9+ recommended
+
+datasets>=2.14.0
+huggingface_hub>=0.17.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.0.0

@@ -1,0 +1,10 @@
+# Phase 3: Filtering & LLM (Groq)
+# Python 3.9+
+
+groq>=0.4.0
+
+# Optional: load .env for GROQ_API_KEY
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.0.0

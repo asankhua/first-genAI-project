@@ -1,0 +1,19 @@
+# Environment (contains secrets)
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data
+*.csv
+phase4/data/
+
+# IDE
+.idea/
+.vscode/
+*.swp

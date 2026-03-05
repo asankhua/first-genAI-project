@@ -1,0 +1,13 @@
+# Phase 4: Backend API
+# Python 3.9+
+
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+python-dotenv>=1.0.0
+
+# Phase 3 dependency (for E2E: Groq LLM calls)
+groq>=0.4.0
+
+# Testing
+pytest>=7.0.0
+httpx>=0.24.0

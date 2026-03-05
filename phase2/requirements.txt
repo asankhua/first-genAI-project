@@ -1,0 +1,9 @@
+# Phase 2: Data cleaning pipeline
+# Python 3.9+ recommended
+
+# Optional: for save_cleaned(..., format="parquet")
+# pandas>=2.0.0
+# pyarrow>=12.0.0
+
+# Testing
+pytest>=7.0.0
