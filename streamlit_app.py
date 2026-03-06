@@ -82,18 +82,18 @@ _CLEANED_ROWS: List[Dict[str, Any]] = []
 _GET_RECOMMENDATIONS = None
 
 
-def _load_standalone_data() -> List[Dict[str, Any]]:
+def _load_standalone_data(force_reload: bool = False) -> List[Dict[str, Any]]:
     """Load cleaned data from bundled CSV for standalone/Streamlit Cloud mode."""
     global _CLEANED_ROWS
-    if _CLEANED_ROWS:
+    if _CLEANED_ROWS and not force_reload:
         return _CLEANED_ROWS
     csv_path = REPO_ROOT / "phase4" / "data" / "cleaned.csv"
     if csv_path.exists():
         try:
             from phase4.src.data_loader import load_cleaned_data
             _CLEANED_ROWS = load_cleaned_data(path=str(csv_path))
-        except Exception:
-            pass
+        except Exception as e:
+            st.session_state["_load_error"] = str(e)
     return _CLEANED_ROWS
 
 
@@ -264,6 +264,7 @@ def load_options():
     """Fetch from API when available; otherwise use bundled data for standalone/Streamlit Cloud."""
     locs, cuis = [], []
     data_source = "unknown"
+    rows_count = 0
     try:
         locs = fetch_locations()
         cuis = fetch_cuisines()
@@ -271,11 +272,12 @@ def load_options():
             data_source = "api"
     except Exception as e:
         # API failed, use bundled data
-        rows = _load_standalone_data()
+        rows = _load_standalone_data(force_reload=True)
+        rows_count = len(rows)
         if rows:
             locs = _get_locations_from_data(rows)
             cuis = _get_cuisines_from_data(rows)
-            data_source = "bundled_csv"
+            data_source = f"bundled_csv({rows_count}_rows)"
     if not locs:
         locs = FALLBACK_LOCALITIES
         data_source = "fallback"
