@@ -4,8 +4,7 @@ AI-powered restaurant recommendation service for Bangalore. Get personalized res
 
 ## 🌐 Live Demo
 
-- **Frontend (Streamlit Cloud):** https://zomato-ai-recommender.streamlit.app
-- **Backend API:** https://your-backend-url.onrender.com
+**Streamlit App:** https://zomato-ai-recommender.streamlit.app
 
 ## Quick Start
 
