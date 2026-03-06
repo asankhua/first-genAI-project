@@ -67,13 +67,13 @@ FALLBACK_CUISINES = [
 
 PRICE_RANGES = [
     ("", "Select price range..."),
-    ("300", "Up to ₹300"),
-    ("600", "₹300 - ₹600"),
-    ("900", "₹600 - ₹900"),
-    ("1200", "₹900 - ₹1200"),
-    ("1500", "₹1200 - ₹1500"),
-    ("2000", "₹1500 - ₹2000"),
-    ("3000", "₹2000+"),
+    ("0-300", "Up to ₹300"),
+    ("300-600", "₹300 - ₹600"),
+    ("600-900", "₹600 - ₹900"),
+    ("900-1200", "₹900 - ₹1200"),
+    ("1200-1500", "₹1200 - ₹1500"),
+    ("1500-2000", "₹1500 - ₹2000"),
+    ("2000-99999", "₹2000+"),
 ]
 
 
@@ -82,11 +82,13 @@ _CLEANED_ROWS: List[Dict[str, Any]] = []
 _GET_RECOMMENDATIONS = None
 
 
+@st.cache_data(ttl=3600)  # Cache for 1 hour
 def _load_standalone_data() -> List[Dict[str, Any]]:
-    """Load cleaned data from bundled CSV for standalone/Streamlit Cloud mode."""
+    """Load cleaned data from bundled CSV."""
     global _CLEANED_ROWS
     if _CLEANED_ROWS:
         return _CLEANED_ROWS
+    
     csv_path = REPO_ROOT / "phase4" / "data" / "cleaned.csv"
     if csv_path.exists():
         try:
@@ -118,7 +120,7 @@ def _get_cuisines_from_data(rows: List[Dict[str, Any]]) -> List[str]:
 
 
 def _recommendations_standalone(
-    place: str, rating: float, price: Optional[int] = None, cuisine: Optional[str] = None
+    place: str, rating: float, price: Optional[int] = None, min_price: Optional[int] = None, cuisine: Optional[str] = None
 ) -> Dict[str, Any]:
     """Call Phase 3/4 recommendation logic directly (no HTTP)."""
     rows = _load_standalone_data()
@@ -126,7 +128,7 @@ def _recommendations_standalone(
         return {"recommendations": [], "raw_response": "", "summary": "No data loaded.", "candidates_count": 0}
     try:
         from phase4.src.recommendation_service import get_recommendations
-        return get_recommendations(rows, place=place, rating=rating, price=price, cuisine=cuisine)
+        return get_recommendations(rows, place=place, rating=rating, price=price, min_price=min_price, cuisine=cuisine)
     except Exception as e:
         return {
             "recommendations": [],
@@ -163,12 +165,14 @@ def fetch_cuisines() -> List[str]:
 
 
 def fetch_recommendations(
-    place: str, rating: float, price: Optional[int] = None, cuisine: Optional[str] = None
+    place: str, rating: float, price: Optional[int] = None, min_price: Optional[int] = None, cuisine: Optional[str] = None
 ) -> Dict[str, Any]:
     """POST /recommendations - same contract as phase5 api.js."""
     body = {"place": place.strip(), "rating": float(rating)}
     if price is not None and price > 0:
         body["price"] = int(price)
+    if min_price is not None and min_price >= 0:
+        body["min_price"] = int(min_price)
     if cuisine and str(cuisine).strip():
         body["cuisine"] = str(cuisine).strip()
     r = requests.post(api_url("/recommendations"), json=body, timeout=60)
@@ -196,7 +200,7 @@ def fetch_recommendations(
 # --- CSS (matches phase5/src/index.css) ---
 STYLES = """
 <style>
-/* Zomato AI Recommender - Match Phase 5 exactly */
+/* Zomato AI Recommender - Light Theme */
 .stApp { max-width: 1200px; margin: 0 auto; }
 div[data-testid="stAppViewContainer"] { background: linear-gradient(180deg, #f5f5f5 0%, #fafafa 50%, #f0f0f0 100%); }
 
@@ -224,7 +228,6 @@ div[data-testid="stAppViewContainer"] { background: linear-gradient(180deg, #f5f
 .results-summary { background: #f8f9fa; border: 1px solid #e8e8e8; border-radius: 12px; padding: 1.25rem 1.5rem; color: #333; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem; }
 .rec-tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 @media (max-width: 640px) { .rec-tiles { grid-template-columns: 1fr; } }
-/* Light-themed tile */
 .rec-tile { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%); border: 1px solid #e9ecef; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 .rec-tile-header { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
 .rec-tile-name { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 0; flex: 1; }
@@ -273,15 +276,24 @@ st.markdown(STYLES, unsafe_allow_html=True)
 
 _inject_secrets_to_env()
 
+# --- Header ---
+st.markdown("""
+<div class="main-header">
+  <h1 class="app-title">Zomato AI <span class="title-accent">Recommender</span></h1>
+  <p class="app-subtitle">Helping you find the best places to eat in Bangalore city</p>
+</div>
+""", unsafe_allow_html=True)
+
 # --- Load locations & cuisines ---
-@st.cache_data(ttl=120)
+@st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_options():
-    """Fetch from API when available; otherwise use bundled data for standalone/Streamlit Cloud."""
+    """Fetch from API when available; otherwise use bundled data."""
     locs, cuis = [], []
     try:
         locs = fetch_locations()
         cuis = fetch_cuisines()
     except Exception:
+        # API failed, use bundled data
         rows = _load_standalone_data()
         if rows:
             locs = _get_locations_from_data(rows)
@@ -293,13 +305,18 @@ def load_options():
     return locs, cuis
 
 
-# --- Header (same as Phase 5) ---
-st.markdown("""
-<div class="main-header">
-  <h1 class="app-title">Zomato AI <span class="title-accent">Recommender</span></h1>
-  <p class="app-subtitle">Helping you find the best places to eat in Bangalore city</p>
-</div>
-""", unsafe_allow_html=True)
+@st.cache_data(ttl=3600)
+def get_ratings_for_location(location: str) -> List[float]:
+    """Get available ratings for a specific location."""
+    rows = _load_standalone_data()
+    ratings = set()
+    for r in rows:
+        if r.get("listed_in(city)") == location or r.get("location") == location:
+            rating = r.get("rating")
+            if rating:
+                ratings.add(float(rating))
+    return sorted(ratings) if ratings else RATING_OPTIONS
+
 
 # Load options (with spinner on first load)
 with st.spinner("Loading options..."):
@@ -317,8 +334,17 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+
+
 # --- Form (same layout as Phase 5) ---
 st.markdown('<div class="form-section">', unsafe_allow_html=True)
+
+# Get selected location for dynamic rating
+selected_location = st.session_state.get("locality_select", "Select locality...")
+if selected_location != "Select locality...":
+    available_ratings = get_ratings_for_location(selected_location)
+else:
+    available_ratings = RATING_OPTIONS
 
 with st.form("recommendation_form", clear_on_submit=False):
     col1, col2 = st.columns(2)
@@ -334,7 +360,7 @@ with st.form("recommendation_form", clear_on_submit=False):
 
         cuisine_options = ["Select cuisines..."] + cuisines
         cuisine = st.selectbox(
-            "👨‍🍳 Cuisines (Multi-select)",
+            "👨‍🍳 Cuisines",
             options=cuisine_options,
             index=0,
             key="cuisine_select",
@@ -343,22 +369,24 @@ with st.form("recommendation_form", clear_on_submit=False):
 
     with col2:
         price_options = [pv for pv, _ in PRICE_RANGES]
-        price_labels = [pl for _, pl in PRICE_RANGES]
         price_idx = st.selectbox(
-            "💰 Price Range *",
+            "💰 Price Range",
             range(len(PRICE_RANGES)),
             format_func=lambda i: PRICE_RANGES[i][1],
         )
-        price_val = price_options[price_idx]  # '' or '300', '600', etc.
+        price_val = price_options[price_idx]
 
+        # Dynamic rating based on location
+        rating_label = f"⭐ Min Rating ({len(available_ratings)} options)" if place else "⭐ Min Rating"
         rating = st.selectbox(
-            "⭐ Min Rating",
-            options=RATING_OPTIONS,
-            index=RATING_OPTIONS.index(3.0),
+            rating_label,
+            options=available_ratings,
+            index=min(4, len(available_ratings)-1) if available_ratings else 0,
         )
 
-    _, btn_col, _ = st.columns([1, 2, 1])
-    with btn_col:
+    # Center the submit button
+    _, col_btn2, _ = st.columns([1, 2, 1])
+    with col_btn2:
         submitted = st.form_submit_button("Get Recommendations ✨")
 
 st.markdown("</div>", unsafe_allow_html=True)
@@ -369,10 +397,13 @@ if submitted:
     if not place_trim:
         st.error("Please select a locality.")
     else:
-        price_num = None
-        if price_val and price_val.strip():
+        min_price = None
+        max_price = None
+        if price_val and price_val.strip() and "-" in price_val:
             try:
-                price_num = int(price_val)
+                parts = price_val.split("-")
+                min_price = int(parts[0]) if parts[0] else None
+                max_price = int(parts[1]) if parts[1] else None
             except ValueError:
                 pass
 
@@ -383,7 +414,8 @@ if submitted:
                     result = fetch_recommendations(
                         place=place_trim,
                         rating=float(rating),
-                        price=price_num,
+                        price=max_price,
+                        min_price=min_price,
                         cuisine=cuisine.strip() if cuisine else None,
                     )
             except Exception as e:
@@ -393,7 +425,8 @@ if submitted:
                         result = _recommendations_standalone(
                             place=place_trim,
                             rating=float(rating),
-                            price=price_num,
+                            price=max_price,
+                            min_price=min_price,
                             cuisine=cuisine.strip() if cuisine else None,
                         )
                 if result is None:

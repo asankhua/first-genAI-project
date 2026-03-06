@@ -1,46 +1,1001 @@
-name,rating,price,cuisines,location,listed_in(city),address
-Toit,4.5,1200,Craft Beer,Cafe,Koramangala,Koramangala
-Meghana Foods,4.2,400,Andhra,Biryani,Koramangala,Koramangala 5th Block
-Empire Restaurant,4.0,500,Mughlai,North Indian,Koramangala,Koramangala
-Truffles,4.4,900,Burger,Cafe,Koramangala,Koramangala
-MTR,4.3,300,South Indian,Koramangala,Koramangala,Lalbagh Road
-Byg Brewski,4.3,1500,Craft Beer,Continental,Koramangala,Sarakki
-Absolute Barbecues,4.1,1100,North Indian,BBQ,Koramangala,Koramangala 4th Block
-Koramangala Social,4.2,900,North Indian,Cafe,Koramangala,Koramangala
-Onesta,4.0,600,Italian,Pizza,Koramangala,Koramangala
-Hole in the Wall,4.3,700,Cafe,Bakery,Koramangala,Koramangala
-Punjabi Rasoi,4.1,450,North Indian,Punjabi,BTM Layout,BTM 2nd Stage
-Sri Udupi Park,4.0,250,South Indian,Udupi,BTM Layout,BTM Layout
-Barbeque Nation,4.2,1000,North Indian,BBQ,BTM Layout,BTM Layout
-Cafe Coffee Day,3.8,350,Cafe,Beverages,BTM Layout,BTM 2nd Stage
-Pista House,4.2,350,Biryani,Hyderabadi,BTM Layout,BTM Layout
-Biriyani Zone,4.0,400,Biryani,Mughlai,BTM Layout,BTM 2nd Stage
-Chai Point,3.9,150,Cafe,Beverages,BTM Layout,BTM Layout
-KFC,4.0,400,Fast Food,Burger,BTM Layout,BTM 2nd Stage
-Indiranagar 100 Feet Bar,4.3,800,Craft Beer,Continental,Indiranagar,100 Feet Road
-Chili's,4.2,1200,Mexican,American,Indiranagar,Indiranagar
-Smoke House Deli,4.4,1000,Continental,Cafe,Indiranagar,Indiranagar
-Pecos,4.1,500,Craft Beer,Continental,Indiranagar,Residency Road
-Shivaji Military Hotel,4.5,200,South Indian,Andhra,Indiranagar,Indiranagar
-The Fatty Bao,4.3,1100,Asian,Continental,Indiranagar,Indiranagar
-Toit Indiranagar,4.4,1100,Craft Beer,Cafe,Indiranagar,Indiranagar
-Haldiram's,4.0,300,North Indian,Sweets,Indiranagar,Indiranagar
-Karavalli,4.5,2000,South Indian,Seafood,Whitefield,Gateway Hotel
-Ebony,4.4,1800,Continental,North Indian,Whitefield,ITC Gardenia
-Punjabi Rasoi Whitefield,4.0,400,North Indian,Punjabi,Whitefield,Whitefield Main Road
-Green Theory,4.2,700,Continental,Cafe,Whitefield,Whitefield
-Blue Frog,4.1,900,Craft Beer,Continental,Whitefield,Whitefield
-Truffles Whitefield,4.3,850,Burger,Cafe,Whitefield,Whitefield
-Mast Kalandar,3.9,350,North Indian,Quick Bites,Whitefield,Whitefield
-Sri Krishna Sagar,4.1,280,South Indian,Udupi,Whitefield,Whitefield
-Barbeque Nation Whitefield,4.0,1000,North Indian,BBQ,Whitefield,EPIP Zone
-Vidyarthi Bhavan,4.5,150,South Indian,Kannada,Basavanagudi,Gandhi Bazar
-Mavalli Tiffin Room,4.4,200,South Indian,Kannada,Basavanagudi,Lalbagh
-Dwaraka,4.2,300,North Indian,Punjabi,Basavanagudi,Basavanagudi
-Adiga's,4.0,250,South Indian,Udupi,Basavanagudi,Basavanagudi
-Taaza Thindi,4.3,100,South Indian,Kannada,Basavanagudi,Gandhi Bazar
-Malleshwaram Sagar,4.1,200,South Indian,Udupi,Malleshwaram,Malleshwaram
-CTR,4.6,120,South Indian,Kannada,Malleshwaram,Malleshwaram
-VB Bakery,4.0,80,Bakery,Bakery,Malleshwaram,Malleshwaram
-Sri Sagar,4.2,280,North Indian,Punjabi,Malleshwaram,Malleshwaram
-Brahmin's Coffee Bar,4.4,100,South Indian,Kannada,Malleshwaram,Malleshwaram
+name,address,location,listed_in(city),cuisines,price,rating,votes,rest_type
+AB's - Absolute Barbecues,"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Bangalore",BTM,BTM,"European,Mediterranean,North Indian,BBQ",1600,4.9,6375,Casual Dining
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2249,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2215,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2235,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2244,"Casual Dining, Bar"
+AB's - Absolute Barbecues,"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Bangalore",Jayanagar,Jayanagar,"European,Mediterranean,North Indian,BBQ",1600,4.9,6404,Casual Dining
+AB's - Absolute Barbecues,"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Bangalore",JP Nagar,JP Nagar,"European,Mediterranean,North Indian,BBQ",1600,4.9,6404,Casual Dining
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Indiranagar,Indiranagar,Desserts,400,4.9,1735,Dessert Parlor
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",MG Road,MG Road,Desserts,400,4.9,1750,Dessert Parlor
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Church Street,Church Street,Desserts,400,4.9,1744,Dessert Parlor
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Brigade Road,Brigade Road,Desserts,400,4.9,1746,Dessert Parlor
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,Desserts,400,4.9,1749,Dessert Parlor
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Residency Road,Residency Road,Desserts,400,4.9,1749,Dessert Parlor
+Barbeque Nation,"86, 1st Cross, Koramangala 1st Block, Bangalore",HSR,HSR,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3614,Casual Dining
+The Black Pearl,"20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,European,Mediterranean,BBQ",1500,4.8,7284,"Casual Dining, Bar"
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3845,Casual Dining
+SantÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© Spa Cuisine,"151, 2nd Cross, Domlur 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Healthy Food,Salad,Mediterranean",1000,4.9,246,Casual Dining
+Flechazo,"120 A3, 2nd Floor, Santosh Tower, EPIP Industrial Area, Phase 1, Hoodi Village, Whitefield, Bangalore",Brookefield,Brookefield,"Asian,Mediterranean,North Indian,BBQ",1400,4.9,2745,Casual Dining
+Brahmin's Coffee Bar,"Ranga Rao Road, Near Shankar Mutt, Shankarapura, Near Basavanagudi, Bangalore",Basavanagudi,Basavanagudi,South Indian,100,4.8,2679,Quick Bites
+Belgian Waffle Factory,"5M/406, Ground Floor, 2nd Block extension, Hennu-Banaswadi Road, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,Desserts,400,4.8,265,Dessert Parlor
+Belgian Waffle Factory,"5M/406, Ground Floor, 2nd Block extension, Hennu-Banaswadi Road, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,Desserts,400,4.8,265,Dessert Parlor
+Byg Brewski Brewing Company,"Behind MK Retail, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Continental,North Indian,Italian,South Indian,Finger Food",1600,4.9,16345,Microbrewery
+Byg Brewski Brewing Company,"Behind MK Retail, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"Continental,North Indian,Italian,South Indian,Finger Food",1600,4.9,16832,Microbrewery
+Belgian Waffle Factory,"65, Markham Road, Ashok Nagar, Brigade Road, Bangalore",Frazer Town,Frazer Town,Desserts,400,4.9,1743,Dessert Parlor
+Punjab Grill,"26/1, Dr Rajkumar Road, Brigade Gateway Campus, Malleshwaram Bangalore",Malleshwaram,Malleshwaram,"North Indian,Mughlai",2000,4.9,1940,Casual Dining
+Punjab Grill,"26/1, Dr Rajkumar Road, Brigade Gateway Campus, Malleshwaram Bangalore",Rajajinagar,Rajajinagar,"North Indian,Mughlai",2000,4.9,1973,Casual Dining
+The Big Barbeque,"163, 2nd Floor, 1st Cross Road, Neeladri Nagar, Phase 1, Electronic City, Bangalore",Electronic City,Electronic City,"BBQ,North Indian,Continental,Chinese",1500,4.7,524,Casual Dining
+Taaza Thindi,"115, 100 Feet Ring Road, Kathriguppe, Banashankari, Bangalore",Banashankari,Banashankari,South Indian,100,4.7,651,Quick Bites
+Truffles,"84, 80 Feet Road, RMV 2nd Stage, New BEL Road, Bangalore",New BEL Road,New BEL Road,"Cafe,American,Burger,Steak",900,4.7,3912,"Cafe, Casual Dining"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Asian,Chinese,Thai,Momos",1500,4.9,2178,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2254,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2217,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2244,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2249,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,"Asian,Chinese,Thai,Momos",1500,4.9,2202,"Casual Dining, Bar"
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",JP Nagar,JP Nagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3855,Casual Dining
+Milano Ice Cream,"460, 2nd Cross, Krishna Temple Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Desserts",400,4.9,2090,Dessert Parlor
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",MG Road,MG Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4839,"Pub, Cafe"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Church Street,Church Street,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4677,"Pub, Cafe"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4639,"Pub, Cafe"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Lavelle Road,Lavelle Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4811,"Pub, Cafe"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Residency Road,Residency Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4845,"Pub, Cafe"
+TBC Sky Lounge,"Astra Hotel, 2795, 27th Main, Sector 1, HSR, Bangalore",HSR,HSR,"Continental,Asian,Italian,North Indian",1000,4.7,6745,"Casual Dining, Bar"
+AB's - Absolute Barbecues,"90/4, 3rd Floor, Outer Ring Road, Munnekollaly Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"European,Mediterranean,North Indian,BBQ",1600,4.8,12121,Casual Dining
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3844,Casual Dining
+The Pizza Bakery,"2985, 12th Main, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Italian,Pizza,Beverages",1200,4.8,1781,Casual Dining
+Punjab Grill,"Ground Floor, Forum Shantiniketan, Whitefield Main Road, Hoodi, Whitefield, Bangalore",Brookefield,Brookefield,North Indian,2000,4.9,518,Casual Dining
+Onesta,"90/66, 1st Floor, Gandhi Bazar Main Road, Basavanagudi, Bangalore",Basavanagudi,Basavanagudi,"Pizza,Cafe,Italian",600,4.6,1755,"Casual Dining, Cafe"
+AB's - Absolute Barbecues,"2nd Floor, Roseline Landmark, 5th B Cross, HRBR Layout, 3rd Block, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"European,Mediterranean,North Indian,BBQ",1400,4.7,1697,Casual Dining
+AB's - Absolute Barbecues,"2nd Floor, Roseline Landmark, 5th B Cross, HRBR Layout, 3rd Block, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,"European,Mediterranean,North Indian,BBQ",1400,4.6,1502,Casual Dining
+The Black Pearl,"20/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore",Bellandur,Bellandur,"North Indian,European,Mediterranean,BBQ",1500,4.8,7023,"Casual Dining, Bar"
+AB's - Absolute Barbecues,"1st Floor, GRS Towers, Above Spencers Hyper Market, Sarjapur Main Road, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"European,Mediterranean,North Indian,BBQ",1600,4.7,1018,Casual Dining
+Belgian Waffle Factory,"Vasanth Nagar, Bangalore",Frazer Town,Frazer Town,Desserts,400,4.8,392,Dessert Parlor
+Chili's American Grill & Bar,"2nd Floor, Orion Mall, Dr. Rajkumar Road, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,"American,Tex-Mex,Burger,BBQ,Mexican",1400,4.8,6433,"Casual Dining, Bar"
+Punjab Grill,"26/1, Dr Rajkumar Road, Brigade Gateway Campus, Malleshwaram Bangalore",Rajajinagar,Rajajinagar,"North Indian,Mughlai",2000,4.9,1985,Casual Dining
+The Big Barbeque,"163, 2nd Floor, 1st Cross Road, Neeladri Nagar, Phase 1, Electronic City, Bangalore",Electronic City,Electronic City,"BBQ,North Indian,Continental,Chinese",1500,4.7,544,Casual Dining
+Onesta,"2469, 3rd Floor, 24th Cross, Opposite BDA Complex, 2nd Stage, Banashankari, Bangalore",Banashankari,Banashankari,"Pizza,Cafe,Italian",600,4.6,2556,"Casual Dining, Cafe"
+Truffles,"84, 80 Feet Road, RMV 2nd Stage, New BEL Road, Bangalore",New BEL Road,New BEL Road,"Cafe,American,Burger,Steak",900,4.7,3916,"Cafe, Casual Dining"
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",BTM,BTM,Desserts,400,4.9,201,Dessert Parlor
+AB's - Absolute Barbecues,"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"European,Mediterranean,North Indian,BBQ",1600,4.9,6490,Casual Dining
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2227,"Casual Dining, Bar"
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,Desserts,400,4.8,189,Dessert Parlor
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,Desserts,400,4.8,189,Dessert Parlor
+AB's - Absolute Barbecues,"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Bangalore",Jayanagar,Jayanagar,"European,Mediterranean,North Indian,BBQ",1600,4.9,6452,Casual Dining
+Sea Lions BBQ & Grills,"24, 46th Cross, 5th Block Jayanagar, Bangalore",JP Nagar,JP Nagar,"North Indian,Chinese,Mughlai,Mexican,BBQ",1100,4.6,538,Casual Dining
+The Pizza Bakery,"2985, 12th Main, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Italian,Pizza,Beverages",1200,4.8,1724,Casual Dining
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",MG Road,MG Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4840,"Pub, Cafe"
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",Church Street,Church Street,"Continental,BBQ,Salad",1500,4.7,3920,"Microbrewery, Casual Dining"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4657,"Pub, Cafe"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Lavelle Road,Lavelle Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4819,"Pub, Cafe"
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",Residency Road,Residency Road,Thai,3000,4.6,988,Fine Dining
+House Of Commons,"1085, 14th Main, 18th Cross, Sector 3, HSR, Bangalore",HSR,HSR,"Continental,Asian,North Indian",1000,4.7,3573,Bar
+The Globe Grub,"2nd Floor, Soul Space Paradigm, Above Bata Showroom, Outer Ring Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Continental,North Indian,Asian,Italian",1300,4.8,3932,Casual Dining
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"African,Burger",1000,4.6,404,Casual Dining
+The Pizza Bakery,"2985, 12th Main, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Italian,Pizza,Beverages",1200,4.8,1785,Casual Dining
+AB's - Absolute Barbecues,"2nd Floor, I20-A2, EPIP Zone, Near Vydehi Hospital, Whitefield, Bangalore",Brookefield,Brookefield,"European,Mediterranean,North Indian,BBQ",1600,4.8,2882,Casual Dining
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Cafe,Beverages",400,4.6,228,Cafe
+Mugful Of Stories,"421, 4th D Main, 5th A Cross, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"Desserts,Bakery",300,4.6,274,Dessert Parlor
+Mugful Of Stories,"421, 4th D Main, 5th A Cross, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,"Desserts,Bakery",300,4.6,274,Dessert Parlor
+AB's - Absolute Barbecues,"1st Floor, GRS Towers, Above Spencers Hyper Market, Sarjapur Main Road, Sarjapur Road, Bangalore",Bellandur,Bellandur,"European,Mediterranean,North Indian,BBQ",1600,4.7,881,Casual Dining
+Sarjapur Social,"22, 57/58/1/2, Saket Callipolis, Doddakannhalli, Ambalipura, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"American,North Indian,Chinese,Finger Food",1500,4.6,1324,"Bar, Casual Dining"
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Frazer Town,Frazer Town,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4678,"Pub, Cafe"
+Belgian Waffle Factory,"Vasanth Nagar, Bangalore",Malleshwaram,Malleshwaram,Desserts,400,4.8,391,Dessert Parlor
+Chili's American Grill & Bar,"2nd Floor, Orion Mall, Dr. Rajkumar Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,"American,Tex-Mex,Burger,BBQ,Mexican",1400,4.8,6461,"Casual Dining, Bar"
+Onesta,"Sy No: 54/2 ( Old Sy no 54 ), Above BATA showroom Bommasandra Village, Attible Hobbli, Anekal Taluk, Bengaluru, Karnataka 560099",Electronic City,Electronic City,"Pizza,Cafe,Italian",600,4.5,860,"Casual Dining, Cafe"
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",Banashankari,Banashankari,"Cafe,Beverages",400,4.6,228,Cafe
+Hammered,"3, 80 Feet Road, Opposite MK Tower, RMV 2nd Stage, New BEL Road, Bangalore",New BEL Road,New BEL Road,"North Indian,Continental,Cafe",1200,4.5,2932,"Pub, Cafe"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Asian,Chinese,Thai,Momos",1500,4.9,2184,"Casual Dining, Bar"
+Asia Kitchen By Mainland China,"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Asian,Chinese,Thai,Momos",1500,4.9,2256,"Casual Dining, Bar"
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",BTM,BTM,Desserts,400,4.8,186,Dessert Parlor
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",BTM,BTM,"Continental,Asian,North Indian",1000,4.8,4390,Bar
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,Desserts,400,4.8,186,Dessert Parlor
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",Jayanagar,Jayanagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.8,3864,Casual Dining
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,Desserts,400,4.8,187,Dessert Parlor
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Asian,North Indian",1000,4.8,4441,Bar
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,460,"Pub, Microbrewery"
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,467,"Pub, Microbrewery"
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,467,"Pub, Microbrewery"
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,482,"Pub, Microbrewery"
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,498,"Pub, Microbrewery"
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,Desserts,400,4.8,189,Dessert Parlor
+Belgian Waffle Factory,"13 KHB Colony, 17th Main, M.I.G, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,Desserts,400,4.8,193,Dessert Parlor
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,516,"Pub, Microbrewery"
+Biergarten,"4th B Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,North Indian,Chinese,European,BBQ",2100,4.8,524,"Pub, Microbrewery"
+O.G. Variar & Sons,"12th Main, 2nd Block, Rajajinagar, Bangalore",Malleshwaram,Malleshwaram,"Bakery,Desserts",200,4.8,1156,Bakery
+Chili's American Grill & Bar,"2nd Floor, Orion Mall, Dr. Rajkumar Road, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,"American,Tex-Mex,Burger,BBQ,Mexican",1400,4.8,6440,"Casual Dining, Bar"
+The Boozy Griffin,"20/7, 4th & 5th Floor, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore",Marathahalli,Marathahalli,"European,Continental",1800,4.8,4696,Pub
+The Boozy Griffin,"20/7, 4th & 5th Floor, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Bangalore",Marathahalli,Marathahalli,"European,Continental",1800,4.8,4705,Pub
+CTR,"7th Cross, Margosa Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,South Indian,150,4.8,4421,Quick Bites
+O.G. Variar & Sons,"12th Main, 2nd Block, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"Bakery,Desserts",200,4.8,1161,Bakery
+Barbecue by Punjab Grill,"Unit T-1, Third Floor, Sampige Road, Mantri Square Mall, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,BBQ,1300,4.8,1367,Casual Dining
+Chili's American Grill & Bar,"2nd Floor, Orion Mall, Dr. Rajkumar Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,"American,Tex-Mex,Burger,BBQ,Mexican",1400,4.8,6470,"Casual Dining, Bar"
+Opus Food Stories,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Goan,Asian,North Indian,European,Continental",1500,4.7,163,"Bar, Casual Dining"
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",Brigade Road,Brigade Road,"Continental,BBQ,Salad",1500,4.7,3894,"Microbrewery, Casual Dining"
+Mainland China,"28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore",Brookefield,Brookefield,"Chinese,Momos",1700,4.7,1512,Casual Dining
+Brew and Barbeque - A Microbrewery Pub,"36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore",Brookefield,Brookefield,"Continental,North Indian,BBQ,Steak",1400,4.7,5746,"Microbrewery, Pub"
+You Mee,"Ground Floor, Forum Shantiniketan, Whitefield Main Road, Thigalarapalya, Hoodi, Whitefield, Bangalore",Brookefield,Brookefield,"Sushi,Japanese,Chinese,Thai",2000,4.7,231,Casual Dining
+Biergarten,"2, Doddanekkundi, Whitefield Road, Mahadevpura, Whitefield, Bangalore",Brookefield,Brookefield,"Continental,European,BBQ,Chinese,Asian",2400,4.7,6865,"Microbrewery, Pub"
+Biergarten,"2, Doddanekkundi, Whitefield Road, Mahadevpura, Whitefield, Bangalore",Brookefield,Brookefield,"Continental,European,BBQ,Chinese,Asian",2400,4.7,6876,"Microbrewery, Pub"
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"North Indian,European,Mediterranean",1400,4.7,10413,"Casual Dining, Bar"
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",BTM,BTM,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3852,Casual Dining
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,American,Burger,Steak",900,4.7,14654,"Cafe, Casual Dining"
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",BTM,BTM,"Cafe,Desserts,Continental",550,4.7,1022,"Cafe, Dessert Parlor"
+ECHOES Koramangala,"Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Chinese,American,Continental,Italian,North Indian",750,4.7,3197,"Cafe, Casual Dining"
+Chianti,"12, 17th Main, 1st Cross, 5th A Block, Koramangala 5th Block, Bangalore",BTM,BTM,Italian,1500,4.7,4845,Casual Dining
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"North Indian,European,Mediterranean",1400,4.7,10422,"Casual Dining, Bar"
+Big Pitcher,"LR Arcade,4121, Old Airport Road, Bangalore",Indiranagar,Indiranagar,"American,Continental,North Indian,Mediterranean",1800,4.7,9021,"Pub, Microbrewery"
+Barbeque Nation,"4005, HAL 2nd Stage, 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,7152,Casual Dining
+Corner House Ice Cream,"3283, 2nd Stage, Off Double Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Desserts",400,4.7,2139,Dessert Parlor
+Burma Burma,"607, Ground Floor, 12th Main, Hal 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Asian,Burmese",1500,4.7,1594,Casual Dining
+Barbeque Nation,"4005, HAL 2nd Stage, 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,7160,Casual Dining
+Toit,"298, Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Italian,American,Pizza",1500,4.7,14956,Microbrewery
+Chianti,"960, Next To Gold Gym,12thMain, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,Italian,1500,4.7,4398,Casual Dining
+Big Pitcher,"LR Arcade,4121, Old Airport Road, Bangalore",Indiranagar,Indiranagar,"American,Continental,North Indian,Mediterranean",1800,4.7,9041,"Pub, Microbrewery"
+Barbeque Nation,"67, 15th Cross, 6th B Main, JP Nagar, Bangalore",Jayanagar,Jayanagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3855,Casual Dining
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,European,Mediterranean",1400,4.7,10471,"Casual Dining, Bar"
+Barbeque Nation,"86, 1st Cross, Koramangala 1st Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3617,Casual Dining
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger,Steak",900,4.7,14690,"Cafe, Casual Dining"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger,Steak",900,4.7,14694,"Cafe, Casual Dining"
+Kurtoskalacs,"130, 17th H Main Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Fast Food",350,4.7,262,"Dessert Parlor, Quick Bites"
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,European,Mediterranean",1400,4.7,10503,"Casual Dining, Bar"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger,Steak",900,4.7,14704,"Cafe, Casual Dining"
+ECHOES Koramangala,"Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Chinese,American,Continental,Italian,North Indian",750,4.7,3214,"Cafe, Casual Dining"
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Asian,North Indian",1000,4.7,4441,Bar
+Barbeque Nation,"86, 1st Cross, Koramangala 1st Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3625,Casual Dining
+Chianti,"12, 17th Main, 1st Cross, 5th A Block, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,Italian,1500,4.7,4857,Casual Dining
+Vanilla Sky,"253, 2nd Floor, 5th Main, 17th Cross, Sector 6, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Chinese,Continental,North Indian,Finger Food",1200,4.7,798,Lounge
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Asian,North Indian",1000,4.7,4442,Bar
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,European,Mediterranean",1400,4.7,10512,"Casual Dining, Bar"
+Barbeque Nation,"86, 1st Cross, Koramangala 1st Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3628,Casual Dining
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,American,Burger,Steak",900,4.7,14710,"Cafe, Casual Dining"
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Asian,North Indian",1000,4.7,4442,Bar
+ECHOES Koramangala,"Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Chinese,American,Continental,Italian,North Indian",750,4.7,3215,"Cafe, Casual Dining"
+Chianti,"12, 17th Main, 1st Cross, 5th A Block, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,Italian,1500,4.7,4860,Casual Dining
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Asian,North Indian",1000,4.7,4447,Bar
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,European,Mediterranean",1400,4.7,10530,"Casual Dining, Bar"
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,European,Mediterranean",1400,4.7,10530,"Casual Dining, Bar"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,American,Burger,Steak",900,4.7,14717,"Cafe, Casual Dining"
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Asian,North Indian",1000,4.7,4447,Bar
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,European,Mediterranean",1400,4.7,10541,"Casual Dining, Bar"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,American,Burger,Steak",900,4.7,14723,"Cafe, Casual Dining"
+ECHOES Koramangala,"Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Chinese,American,Continental,Italian,North Indian",750,4.7,3217,"Cafe, Casual Dining"
+Chianti,"12, 17th Main, 1st Cross, 5th A Block, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,Italian,1500,4.7,4870,Casual Dining
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Asian,North Indian",1000,4.7,4449,Bar
+Barbeque Nation,"86, 1st Cross, Koramangala 1st Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,3632,Casual Dining
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,European,Mediterranean",1400,4.7,10541,"Casual Dining, Bar"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,American,Burger,Steak",900,4.7,14723,"Cafe, Casual Dining"
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Asian,North Indian",1000,4.7,4449,Bar
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,European,Mediterranean",1400,4.7,10547,"Casual Dining, Bar"
+Truffles,"28, 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,American,Burger,Steak",900,4.7,14726,"Cafe, Casual Dining"
+ECHOES Koramangala,"Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Chinese,American,Continental,Italian,North Indian",750,4.7,3220,"Cafe, Casual Dining"
+Chianti,"12, 17th Main, 1st Cross, 5th A Block, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,Italian,1500,4.7,4872,Casual Dining
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Asian,North Indian",1000,4.7,4464,Bar
+The Black Pearl,"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,European,Mediterranean",1400,4.7,10550,"Casual Dining, Bar"
+House Of Commons,"122/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Asian,North Indian",1000,4.7,4470,Bar
+CTR,"7th Cross, Margosa Road, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,South Indian,150,4.7,4408,Quick Bites
+Barbecue by Punjab Grill,"Unit T-1, Third Floor, Sampige Road, Mantri Square Mall, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,BBQ,1300,4.7,1316,Casual Dining
+Flechazo,"9/1, 1st Floor, Above Surya Nissan, VRR Orchid, Doddanakkundi, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Asian,Mediterranean,North Indian,BBQ",1400,4.7,7154,Casual Dining
+Mainland China,"28/2, 1st Floor, Siddapura, Whitefield Main Road, Whitefield, Bangalore",Marathahalli,Marathahalli,Chinese,1700,4.7,1542,Casual Dining
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",MG Road,MG Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.7,4841,"Pub, Cafe"
+Barbeque Nation,"4005, HAL 2nd Stage, 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,7261,Casual Dining
+Corner House Ice Cream,"3283, 2nd Stage, Off Double Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Ice Cream,Desserts",400,4.7,2172,Dessert Parlor
+Burma Burma,"607, Ground Floor, 12th Main, Hal 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Asian,Burmese",1500,4.7,1674,Casual Dining
+Corner House Ice Cream,"3283, 2nd Stage, Off Double Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Ice Cream,Desserts",400,4.7,2174,Dessert Parlor
+Barbeque Nation,"4005, HAL 2nd Stage, 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.7,7270,Casual Dining
+Burma Burma,"607, Ground Floor, 12th Main, Hal 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Asian,Burmese",1500,4.7,1677,Casual Dining
+Hunger Camp,"77B, 2nd Cross, 3rd Main, 4th Phase, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,South Indian,Chinese,Seafood",1300,4.6,311,Casual Dining
+eat.fit,"93/A 4th 'B' Cross, Koramangala 5th Block, Bangalore",Basavanagudi,Basavanagudi,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,143,Delivery
+Onesta,"2469, 3rd Floor, 24th Cross, Opposite BDA Complex, 2nd Stage, Banashankari, Bangalore",Basavanagudi,Basavanagudi,"Pizza,Cafe,Italian",600,4.6,2556,"Casual Dining, Cafe"
+Sarjapur Social,"22, 57/58/1/2, Saket Callipolis, Doddakannhalli, Ambalipura, Sarjapur Road, Bangalore",Bellandur,Bellandur,"American,North Indian,Chinese,Finger Food",1500,4.6,1193,"Bar, Casual Dining"
+Vapour Brewpub and Diner,"7th Floor, Bren Mercury, Kaikondrahalli Junction, Sarjapur Road, Bangalore",Bellandur,Bellandur,"North Indian,Continental,Italian",1400,4.6,2726,"Microbrewery, Pub"
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",Brigade Road,Brigade Road,Thai,3000,4.6,979,Fine Dining
+Brik Oven,"19, Church Street, Bangalore",Brigade Road,Brigade Road,"Cafe,Pizza,Beverages",1100,4.6,2257,Cafe
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,2490,Casual Dining
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Brigade Road,Brigade Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.6,1211,"Casual Dining, Bar"
+Yauatcha,"1 MG Mall, MG Road, Bangalore",Brigade Road,Brigade Road,"Chinese,Asian,Cantonese,Tea",2800,4.6,2339,Fine Dining
+Brik Oven,"19, Church Street, Bangalore",Brigade Road,Brigade Road,"Cafe,Pizza,Beverages",1100,4.6,2259,Cafe
+Toast & Tonic,"14/1, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Brigade Road,Brigade Road,"European,Asian",1500,4.6,1082,Casual Dining
+Caperberry,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Spanish,Italian,Mediterranean,European,Salad",2200,4.6,1423,Fine Dining
+Mahjong Room - WelcomHotel Bengaluru,"WelcomHotel Bengaluru, 46, Richmond Road, Bangalore",Brigade Road,Brigade Road,Chinese,1200,4.6,116,Casual Dining
+Dock Frost'd,"Sriven Square Building, Ground Floor, Near Kundanahalli Signal, Marathahalli",Brookefield,Brookefield,"Beverages,Desserts",400,4.6,110,"Beverage Shop, Dessert Parlor"
+Onesta,"90/3, Opposite Innovative Multiplex, Beside World of Titan, Outer Ring Road, Marathahalli, Bangalore",Brookefield,Brookefield,"Pizza,Cafe,Italian",600,4.6,2750,"Casual Dining, Cafe"
+Galito's,"120, Ground Floor, EPIP Zone, Near BMTC Bus Depot, Whitefield, Bangalore",Brookefield,Brookefield,"African,Burger",1000,4.6,586,Casual Dining
+Windmills Craftworks,"331, Road 5B, EPIP Area, Next to KTPO, Whitefield, Bangalore",Brookefield,Brookefield,"American,North Indian,Salad",2500,4.6,5890,"Microbrewery, Pub"
+Oota Bangalore,"331, 5B, EPIP Zone Landmarks, Near L&T Infotech, Whitefield, Bangalore",Brookefield,Brookefield,South Indian,1700,4.6,463,Casual Dining
+Windmills Craftworks,"331, Road 5B, EPIP Area, Next to KTPO, Whitefield, Bangalore",Brookefield,Brookefield,"American,North Indian,Salad",2500,4.6,5892,"Microbrewery, Pub"
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",BTM,BTM,"African,Burger",1000,4.6,406,Casual Dining
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",BTM,BTM,"Desserts,Beverages",300,4.6,117,Dessert Parlor
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",BTM,BTM,"American,North Indian,Chinese,Finger Food",1500,4.6,4650,Lounge
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",BTM,BTM,"Cafe,Beverages",400,4.6,230,Cafe
+Kurtoskalacs,"130, 17th H Main Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Desserts,Fast Food",400,4.6,342,"Dessert Parlor, Quick Bites"
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",BTM,BTM,"Desserts,Continental",550,4.6,1028,Dessert Parlor
+Hunger Camp,"77B, 2nd Cross, 3rd Main, 4th Phase, JP Nagar, Bangalore",BTM,BTM,"North Indian,South Indian,Chinese,Seafood",1300,4.6,319,Casual Dining
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",BTM,BTM,"Continental,Finger Food,Asian,North Indian",1400,4.6,866,"Microbrewery, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"European,Continental",1800,4.6,4947,"Casual Dining, Pub"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"European,Continental",1800,4.6,4965,"Casual Dining, Pub"
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",Church Street,Church Street,Thai,3000,4.6,983,Fine Dining
+Brik Oven,"19, Church Street, Bangalore",Church Street,Church Street,"Cafe,Pizza,Beverages",1100,4.6,2263,Cafe
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",Church Street,Church Street,"European,Italian,Desserts,Salad,Juices",1600,4.6,2492,Casual Dining
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Church Street,Church Street,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.6,1217,"Casual Dining, Bar"
+Yauatcha,"1 MG Mall, MG Road, Bangalore",Church Street,Church Street,"Chinese,Asian,Cantonese,Tea",2800,4.6,2341,Fine Dining
+Toast & Tonic,"14/1, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Church Street,Church Street,"European,Asian",1500,4.6,1083,Casual Dining
+Caperberry,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"Spanish,Italian,Mediterranean,European,Salad",2200,4.6,1429,Fine Dining
+Mahjong Room - WelcomHotel Bengaluru,"WelcomHotel Bengaluru, 46, Richmond Road, Bangalore",Church Street,Church Street,Chinese,1200,4.6,116,Casual Dining
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",Frazer Town,Frazer Town,"European,Italian,Desserts,Salad,Juices",1600,4.6,2496,Casual Dining
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Frazer Town,Frazer Town,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.6,1219,"Casual Dining, Bar"
+Opus Food Stories,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",HSR,HSR,"Goan,Asian,North Indian,European,Continental",1500,4.6,174,"Bar, Casual Dining"
+Here & Now,"Shop 28, Opposite BDA Complex, 14th Main Road, Sector 2, HSR Layout, Bangalore",HSR,HSR,"Cafe,American,Burger,Beverages",750,4.6,1580,Cafe
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",HSR,HSR,"Desserts,Beverages",300,4.6,118,Dessert Parlor
+Vanilla Sky,"253, 2nd Floor, 5th Main, 17th Cross, Sector 6, HSR, Bangalore",HSR,HSR,"Chinese,Continental,North Indian,Finger Food",1200,4.6,766,Lounge
+Baar Union,"253, 1st Floor, 5th Main, 17th Cross, Sector 6, HSR Layout, HSR, Bangalore",HSR,HSR,"Continental,Finger Food,Asian,Chinese",850,4.6,634,"Bar, Pub"
+Here & Now,"Shop 28, Opposite BDA Complex, 14th Main Road, Sector 2, HSR Layout, Bangalore",HSR,HSR,"Cafe,American,Burger,Beverages",750,4.6,1582,Cafe
+Opus Food Stories,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",HSR,HSR,"Goan,Asian,North Indian,European,Continental",1500,4.6,178,"Bar, Casual Dining"
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",Indiranagar,Indiranagar,Thai,3000,4.6,979,Fine Dining
+Truffles,"1st Stage, 100 feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Cafe,American,Burger,Steak",900,4.6,1308,"Cafe, Casual Dining"
+Smoor,"1131, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Desserts,Cafe,Beverages",900,4.6,1687,"Dessert Parlor, Cafe"
+Truffles,"1st Stage, 100 feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Cafe,American,Burger,Steak",900,4.6,1313,"Cafe, Casual Dining"
+Smoke House Deli,"1209, 100 Feet Road, Opposite Apollo Clinic, Indiranagar, Bangalore",Indiranagar,Indiranagar,"European,Italian,Desserts,Salad,Juices",1600,4.6,5421,Casual Dining
+The Fatty Bao - Asian Gastro Bar,"610, 3rd Floor, 12th Main, Off 80 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Asian,Thai,Vietnamese,Malaysian,Beverages",1200,4.6,3760,"Casual Dining, Bar"
+Smoor,"1131, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Desserts,Cafe,Beverages",900,4.6,1689,"Dessert Parlor, Cafe"
+Apsara Ice Cream,"100/1B, 10th Cross, 2nd Main, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Desserts",200,4.6,206,Dessert Parlor
+Natural Ice Cream,"Next to Apple Of My Eye, 12th Main, 2nd Stage, HAL, Off 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Desserts",150,4.6,922,Dessert Parlor
+1131 Bar + Kitchen,"100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Continental,Asian,Italian,North Indian",1500,4.6,2785,"Bar, Casual Dining"
+Yauatcha,"1 MG Mall, MG Road, Bangalore",Indiranagar,Indiranagar,"Chinese,Asian,Cantonese,Tea",2800,4.6,2332,Fine Dining
+Sea Lions BBQ & Grills,"24, 46th Cross, 5th Block Jayanagar, Bangalore",Jayanagar,Jayanagar,"North Indian,Chinese,Mughlai,Mexican,BBQ",1100,4.6,538,Casual Dining
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Cafe,Beverages",400,4.6,233,Cafe
+Onesta,"2469, 3rd Floor, 24th Cross, Opposite BDA Complex, 2nd Stage, Banashankari, Bangalore",Jayanagar,Jayanagar,"Pizza,Cafe,Italian",600,4.6,2604,"Casual Dining, Cafe"
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",Jayanagar,Jayanagar,"African,Burger",1000,4.6,409,Casual Dining
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Jayanagar,Jayanagar,"American,North Indian,Chinese,Finger Food",1500,4.6,4675,Lounge
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Jayanagar,Jayanagar,"Cafe,Desserts,Continental",550,4.6,1024,"Cafe, Dessert Parlor"
+Sea Lions BBQ & Grills,"24, 46th Cross, 5th Block Jayanagar, Bangalore",Jayanagar,Jayanagar,"North Indian,Chinese,Mughlai,Mexican,BBQ",1100,4.6,545,Casual Dining
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Cafe,Beverages",400,4.6,256,Cafe
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",JP Nagar,JP Nagar,"African,Burger",1000,4.6,409,Casual Dining
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",JP Nagar,JP Nagar,"Cafe,Beverages",400,4.6,233,Cafe
+Hunger Camp,"77B, 2nd Cross, 3rd Main, 4th Phase, JP Nagar, Bangalore",JP Nagar,JP Nagar,"North Indian,South Indian,Chinese,Seafood",1300,4.6,324,Casual Dining
+Zamindar,"412, 2nd Floor, 4th Cross Road, HRBR Layout, 2nd Block, Kalyan Nagar, Bengaluru",Kammanahalli,Kammanahalli,"Biryani,Mughlai,Andhra",800,4.6,376,Casual Dining
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger",600,4.6,7113,Cafe
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Desserts,Continental",550,4.6,1026,"Cafe, Dessert Parlor"
+Here & Now,"Shop 28, Opposite BDA Complex, 14th Main Road, Sector 2, HSR Layout, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger,Beverages",750,4.6,1587,Cafe
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,1189,Delivery
+Corner House Ice Cream,"146, Near William Penn, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Ice Cream,Desserts",400,4.6,277,Dessert Parlor
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Beverages",300,4.6,119,Dessert Parlor
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4686,Lounge
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger",600,4.6,7120,Cafe
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Finger Food,Asian,North Indian",1400,4.6,886,"Microbrewery, Casual Dining"
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4689,Lounge
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,North Indian,Chinese,American",1300,4.6,2579,"Bar, Casual Dining"
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.6,6371,"Bar, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"European,Continental",1800,4.6,4986,"Casual Dining, Pub"
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Desserts,Continental",550,4.6,1027,"Cafe, Dessert Parlor"
+Baar Union,"253, 1st Floor, 5th Main, 17th Cross, Sector 6, HSR Layout, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Finger Food,Asian,Chinese",850,4.6,650,"Bar, Pub"
+Here & Now,"Shop 28, Opposite BDA Complex, 14th Main Road, Sector 2, HSR Layout, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,American,Burger,Beverages",750,4.6,1590,Cafe
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Finger Food,Asian,North Indian",1400,4.6,890,"Microbrewery, Casual Dining"
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4694,Lounge
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.6,6372,"Bar, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"European,Continental",1800,4.6,4997,"Casual Dining, Pub"
+Baar Union,"253, 1st Floor, 5th Main, 17th Cross, Sector 6, HSR Layout, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Finger Food,Asian,Chinese",850,4.6,653,"Bar, Pub"
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,American,Burger",600,4.6,7122,Cafe
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,1193,Delivery
+Corner House Ice Cream,"146, Near William Penn, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Ice Cream,Desserts",400,4.6,277,Dessert Parlor
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Beverages",300,4.6,121,Dessert Parlor
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,Desserts,Continental",550,4.6,1026,"Cafe, Dessert Parlor"
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4694,Lounge
+Kurtoskalacs,"130, 17th H Main Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Fast Food",400,4.6,268,"Dessert Parlor, Quick Bites"
+XO Belgian Waffle,"105, 1st A Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Beverages",400,4.6,834,Dessert Parlor
+eat.fit,"93/A 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,155,Delivery
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,North Indian,Chinese,American",1300,4.6,2585,"Bar, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"European,Continental",1800,4.6,4997,"Casual Dining, Pub"
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.6,6372,"Bar, Casual Dining"
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Finger Food,Asian,North Indian",1400,4.6,890,"Microbrewery, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"European,Continental",1800,4.6,5002,"Casual Dining, Pub"
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4695,Lounge
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Finger Food,Asian,North Indian",1400,4.6,895,"Microbrewery, Casual Dining"
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,North Indian,Chinese,American",1300,4.6,2590,"Bar, Casual Dining"
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,American,Burger",600,4.6,7127,Cafe
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Desserts,Continental",550,4.6,1026,"Cafe, Dessert Parlor"
+Corner House Ice Cream,"146, Near William Penn, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Ice Cream,Desserts",400,4.6,278,Dessert Parlor
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Beverages",300,4.6,121,Dessert Parlor
+Smoke House Deli,"1209, 100 Feet Road, Opposite Apollo Clinic, Indiranagar, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"European,Italian,Desserts,Salad,Juices",1600,4.6,5436,Casual Dining
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4695,Lounge
+Kurtoskalacs,"130, 17th H Main Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Fast Food",400,4.6,272,"Dessert Parlor, Quick Bites"
+XO Belgian Waffle,"105, 1st A Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Beverages",400,4.6,834,Dessert Parlor
+eat.fit,"93/A 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,155,Delivery
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4707,Lounge
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,American,Burger",600,4.6,7129,Cafe
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,North Indian,Chinese,American",1300,4.6,2592,"Bar, Casual Dining"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"European,Continental",1800,4.6,5015,"Casual Dining, Pub"
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.6,1892,"Casual Dining, Bar"
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Desserts,Continental",550,4.6,1026,"Cafe, Dessert Parlor"
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,American,Burger",600,4.6,7129,Cafe
+Corner House Ice Cream,"146, Near William Penn, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Desserts",400,4.6,283,Dessert Parlor
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"African,Burger",1000,4.6,415,Casual Dining
+The Pancake Story,"18, Ground Floor, 7th Main, 80ft Road, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Beverages",300,4.6,121,Dessert Parlor
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4707,Lounge
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.6,1892,"Casual Dining, Bar"
+The Blue Wagon - Kitchen,"615/1, Ground Floor, Janardhan Mansion, 10th C Main, 32nd D Cross, 4th Block, Jayanagar, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Beverages",400,4.6,237,Cafe
+Kurtoskalacs,"130, 17th H Main Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Fast Food",400,4.6,277,"Dessert Parlor, Quick Bites"
+eat.fit,"93/A 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.6,158,Delivery
+Koramangala Social,"118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,North Indian,Chinese,Finger Food",1500,4.6,4714,Lounge
+Lot Like Crepes,"203, 1st Main, Koramangala 7th Block, bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Desserts,Continental",550,4.6,1027,"Cafe, Dessert Parlor"
+The Hole in the Wall Cafe,"4, 8th Main Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,American,Burger",600,4.6,7137,Cafe
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"European,Continental",1800,4.6,5017,"Casual Dining, Pub"
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.6,1895,"Casual Dining, Bar"
+The Boozy Griffin,"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"European,Continental",1800,4.6,5024,"Casual Dining, Pub"
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.6,1897,"Casual Dining, Bar"
+Olive Bar And Kitchen,"16, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Lavelle Road,Lavelle Road,"Mediterranean,European,Salad",1800,4.6,2211,Casual Dining
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",Lavelle Road,Lavelle Road,Thai,3000,4.6,986,Fine Dining
+Brik Oven,"19, Church Street, Bangalore",Lavelle Road,Lavelle Road,"Cafe,Pizza,Beverages",1100,4.6,2289,Cafe
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",Lavelle Road,Lavelle Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,2513,Casual Dining
+Caperberry,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Lavelle Road,Lavelle Road,"Spanish,Italian,Mediterranean,European,Salad",2200,4.6,1438,Fine Dining
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",Lavelle Road,Lavelle Road,"Continental,BBQ,Salad",1500,4.6,3998,"Microbrewery, Casual Dining"
+Yauatcha,"1 MG Mall, MG Road, Bangalore",Lavelle Road,Lavelle Road,"Chinese,Asian,Cantonese,Tea",2800,4.6,2369,Fine Dining
+Toast & Tonic,"14/1, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Lavelle Road,Lavelle Road,"European,Asian",1500,4.6,1091,Casual Dining
+Stories,"77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore",Malleshwaram,Malleshwaram,"Continental,North Indian,Chinese",1100,4.6,2315,"Casual Dining, Bar"
+Sea Rock,"6/4, 1st and 2nd Floor, Above Shivananda Stores, Shivananda Circle, Seshadripuram, Bangalore",Malleshwaram,Malleshwaram,"Mangalorean,Seafood,South Indian,North Indian,Chinese",1000,4.6,514,Casual Dining
+Stories,"77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore",Malleshwaram,Malleshwaram,"Continental,North Indian,Chinese",1100,4.6,2338,"Casual Dining, Bar"
+Brew and Barbeque - A Microbrewery Pub,"36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Continental,North Indian,BBQ,Steak",1400,4.6,5894,"Microbrewery, Pub"
+Onesta,"90/3, Opposite Innovative Multiplex, Beside World of Titan, Outer Ring Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Pizza,Cafe,Italian",600,4.6,2906,"Casual Dining, Cafe"
+Dock Frost'd,"Sriven Square Building, Ground Floor, Near Kundanahalli Signal, Marathahalli",Marathahalli,Marathahalli,"Beverages,Desserts",400,4.6,121,"Beverage Shop, Dessert Parlor"
+Galito's,"120, Ground Floor, EPIP Zone, Near BMTC Bus Depot, Whitefield, Bangalore",Marathahalli,Marathahalli,"African,Burger",1000,4.6,592,Casual Dining
+Brew and Barbeque - A Microbrewery Pub,"36/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Continental,North Indian,BBQ,Steak",1400,4.6,5913,"Microbrewery, Pub"
+Rim Naam - The Oberoi,"The Oberoi, 37-39, MG Road, Bangalore",MG Road,MG Road,Thai,3000,4.6,988,Fine Dining
+Brik Oven,"19, Church Street, Bangalore",MG Road,MG Road,"Cafe,Pizza,Beverages",1100,4.6,2293,Cafe
+Smoor,"1131, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",MG Road,MG Road,"Desserts,Cafe,Beverages",900,4.6,1726,"Dessert Parlor, Cafe"
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",MG Road,MG Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,2518,Casual Dining
+Yauatcha,"1 MG Mall, MG Road, Bangalore",MG Road,MG Road,"Chinese,Asian,Cantonese,Tea",2800,4.6,2369,Fine Dining
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",MG Road,MG Road,"Continental,BBQ,Salad",1500,4.6,4021,"Microbrewery, Casual Dining"
+Toast & Tonic,"14/1, Wood Street, Ashok Nagar, Richmond Road, Bangalore",MG Road,MG Road,"European,Asian",1500,4.6,1092,Casual Dining
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",MG Road,MG Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,2519,Casual Dining
+Caperberry,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",MG Road,MG Road,"Spanish,Italian,Mediterranean,European,Salad",2200,4.6,1438,Fine Dining
+Big Pitcher,"LR Arcade,4121, Old Airport Road, Bangalore",Old Airport Road,Old Airport Road,"American,Continental,North Indian,Mediterranean",1800,4.6,9272,"Pub, Microbrewery"
+Smoor,"1131, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Desserts,Cafe,Beverages",900,4.6,1732,"Dessert Parlor, Cafe"
+The Fatty Bao - Asian Gastro Bar,"610, 3rd Floor, 12th Main, Off 80 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Japanese,Sushi,Asian",1200,4.6,3818,"Casual Dining, Bar"
+Smoke House Deli,"1209, 100 Feet Road, Opposite Apollo Clinic, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,5446,Casual Dining
+Natural Ice Cream,"Next to Apple Of My Eye, 12th Main, 2nd Stage, HAL, Off 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Ice Cream,Beverages",200,4.6,945,Dessert Parlor
+Big Pitcher,"LR Arcade,4121, Old Airport Road, Bangalore",Old Airport Road,Old Airport Road,"American,Continental,North Indian,Mediterranean",1800,4.6,9300,"Pub, Microbrewery"
+The Fatty Bao - Asian Gastro Bar,"610, 3rd Floor, 12th Main, Off 80 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Japanese,Sushi,Asian",1200,4.6,3823,"Casual Dining, Bar"
+Smoke House Deli,"1209, 100 Feet Road, Opposite Apollo Clinic, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,5448,Casual Dining
+Tipsy Bull - The Bar Exchange,"2008, 2nd Floor, 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Chinese,Continental,North Indian,Mexican",1400,4.6,3173,"Bar, Casual Dining"
+Chianti,"960, Next To Gold Gym,12thMain, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,Italian,1500,4.6,4453,Casual Dining
+Stories,"77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"Continental,North Indian,Chinese",1100,4.6,2396,"Casual Dining, Bar"
+Stories,"77, West of Chord Road, Beside To Mahalakshmi Layout Metro Station, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"Continental,North Indian,Chinese",1100,4.6,2423,"Casual Dining, Bar"
+Brik Oven,"19, Church Street, Bangalore",Residency Road,Residency Road,"Cafe,Pizza,Beverages",1100,4.6,2295,Cafe
+Hammered,"18, Ali Askar Road, Cunningham Road, Bangalore",Residency Road,Residency Road,"North Indian,Thai,Japanese,Continental,Cafe",1300,4.6,4841,"Pub, Cafe"
+Smoke House Deli,"52/ 53, Ground Floor, Lavelle Road, Bangalore",Residency Road,Residency Road,"European,Italian,Desserts,Salad,Juices",1600,4.6,2521,Casual Dining
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",Residency Road,Residency Road,"Continental,BBQ,Salad",1500,4.6,4119,"Microbrewery, Casual Dining"
+Yauatcha,"1 MG Mall, MG Road, Bangalore",Residency Road,Residency Road,"Chinese,Asian,Cantonese,Tea",2800,4.6,2372,Fine Dining
+Toast & Tonic,"14/1, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Residency Road,Residency Road,"European,Asian",1500,4.6,1095,Casual Dining
+Caperberry,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Residency Road,Residency Road,"Spanish,Italian,Mediterranean,European,Salad",2200,4.6,1439,Fine Dining
+Communiti,"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Bangalore",Residency Road,Residency Road,"Continental,BBQ,Salad",1500,4.6,4048,"Microbrewery, Casual Dining"
+Chili's American Grill & Bar,"13, The Bay, RMZ EcoWorld, Bellandur, Bangalore",Sarjapur Road,Sarjapur Road,"American,Tex-Mex,Burger,BBQ",1800,4.6,1534,"Casual Dining, Bar"
+Via Milano,"The Gran Carmen, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"Salad,Italian,Desserts,Pizza",1500,4.6,142,Casual Dining
+Shakes Theory,"766/25-01, 47th A Cross, Near Sangam Circle, Adarsh Gardens Apartments Road, 8th Block, Jayanagar, Bangalore",Banashankari,Banashankari,"Beverages,Sandwich",300,4.5,155,Beverage Shop
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Bannerghatta Road,Bannerghatta Road,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1178,Delivery
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Bannerghatta Road,Bannerghatta Road,"Desserts,Beverages",400,4.5,549,Dessert Parlor
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Bannerghatta Road,Bannerghatta Road,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1179,Delivery
+Hakuna Matata,"1231/35/2, 24th Main, 7th Phase, Opposite Brigade Palm Springs, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,Asian,Seafood,Chinese",1200,4.5,2781,"Casual Dining, Bar"
+Shakes Theory,"766/25-01, 47th A Cross, Near Sangam Circle, Adarsh Gardens Apartments Road, 8th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Beverages,Sandwich",300,4.5,155,Beverage Shop
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Basavanagudi,Basavanagudi,"Continental,Mexican,Chinese,North Indian",800,4.5,784,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Basavanagudi,Basavanagudi,"Cafe,Continental,Burger",900,4.5,1872,Cafe
+Milano Ice Cream,"7, 9th Main, 5th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Ice Cream,Desserts",400,4.5,197,Dessert Parlor
+Mavalli Tiffin Room (MTR),"14, Lalbagh Road, Mavalli, Basavanagudi, Bangalore",Basavanagudi,Basavanagudi,South Indian,250,4.5,2896,Quick Bites
+Meghana Foods,"52, 1st Floor, 33rd Cross, 4th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Biryani,Andhra,North Indian,Seafood",600,4.5,4569,Casual Dining
+Jalsa Gold,"20\5, Panathur Junction, Outer Ring Road, Kadubeessanahalli, Marathahalli, Bangalore",Bellandur,Bellandur,"North Indian,Mughlai,Italian",1300,4.5,3421,Casual Dining
+XO Belgian Waffle,"27th Main road, Sriven Teesta, Near Raymond?s Showroom HSR, Bangalore",Bellandur,Bellandur,"Desserts,Beverages",400,4.5,141,Dessert Parlor
+Suryawanshi,"71/1A, 1st Floor, Kaikondrahalli, Sarjapur Main Road, Bengaluru, Karnataka",Bellandur,Bellandur,"Maharashtrian,Seafood",700,4.5,125,Casual Dining
+Chili's American Grill & Bar,"13, The Bay, RMZ EcoWorld, Bellandur, Bangalore",Bellandur,Bellandur,"American,Tex-Mex,Burger,BBQ",1800,4.5,1365,"Casual Dining, Bar"
+Olive Bar And Kitchen,"16, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Brigade Road,Brigade Road,"Mediterranean,European,Salad",1800,4.5,2194,Casual Dining
+Mainland China,"First Floor, 14, Church Street, Bangalore",Brigade Road,Brigade Road,"Chinese,Momos",1700,4.5,1394,"Casual Dining, Bar"
+Truffles,"22, St. Marks Road, Bangalore",Brigade Road,Brigade Road,"Cafe,American,Burger,Steak",900,4.5,3568,Cafe
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Brigade Road,Brigade Road,"Italian,Pizza,Salad",1300,4.5,1621,Casual Dining
+Truffles,"22, St. Marks Road, Bangalore",Brigade Road,Brigade Road,"Cafe,American,Burger,Steak",900,4.5,3569,Cafe
+Fabelle Chocolate Boutique - ITC Gardenia,"ITC Gardenia, 1, Ashok Nagar, Residency Road, Bangalore",Brigade Road,Brigade Road,"Desserts,Ice Cream,Beverages",1250,4.5,232,Dessert Parlor
+Corner House Ice Cream,"4, Madras Bank Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Ice Cream,Desserts",400,4.5,292,Dessert Parlor
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",Brigade Road,Brigade Road,"American,Continental,Salad",2000,4.5,8375,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Brigade Road,Brigade Road,South Indian,1500,4.5,1573,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Brigade Road,Brigade Road,"American,BBQ",2500,4.5,5262,"Casual Dining, Bar"
+Karavalli - The Gateway Hotel,"Gateway Hotel, 66, Residency Road, Bangalore",Brigade Road,Brigade Road,"Mangalorean,Konkan,Seafood,Kerala",3500,4.5,674,Fine Dining
+Truffles,"22, St. Marks Road, Bangalore",Brigade Road,Brigade Road,"Cafe,American,Burger,Steak",900,4.5,3614,Cafe
+Chianti,"No.18, Ramanashree Arcade, Ground Floor, Ashok Nagar Post, MG Road, Bangalore",Brigade Road,Brigade Road,Italian,1500,4.5,340,Casual Dining
+Alba - JW Marriott Bengaluru,"JW Marriott, 24/1, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,Italian,4000,4.5,583,Fine Dining
+Republic Of Noodles - Lemon Tree Premier,"Lemon Tree Premier, 2/1, St. Johns Road, Ulsoor, Bangalore",Brigade Road,Brigade Road,"Malaysian,Singaporean,Thai",1800,4.5,550,Casual Dining
+Siddiqu Kabab Center,"44, Aga Abudullah Street, Richmond Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Rolls",250,4.5,174,Quick Bites
+Chikkanna Tiffin Room,"Near Ulsoor Gate Police Station, Cubbonpet, City Market, Bangalore",Brigade Road,Brigade Road,South Indian,150,4.5,203,Quick Bites
+Bloomsbury's Global Kitchen & Bakehouse,"Ground Floor, EPIP Zone, Near BMTC Bus Depot, Whitefield, Bangalore",Brookefield,Brookefield,"American,Cafe,Continental,French,Burger",900,4.5,733,"Cafe, Dessert Parlor"
+Polar Bear,"710, Thubarahalli, Varthur Main Road, Whitefield, Bangalore",Brookefield,Brookefield,"Desserts,Ice Cream",300,4.5,41,"Takeaway, Delivery"
+HOMMS,"2A & 3, 15th Cross Rd, Below Zolo Stays Utopia, Green Garden Layout, Munnekollal, Marathahalli, Bangalore",Brookefield,Brookefield,"Chinese,Beverages,Momos,Thai",300,4.5,224,Quick Bites
+Corner House Ice Cream,"Tata Star Extra, Opposite Shankara Eye Hospital, Kundalahalli Gate, Varthur Road, Marathahalli, Bangalore",Brookefield,Brookefield,"Ice Cream,Desserts",400,4.5,949,Dessert Parlor
+Sidewalk - The Garden Bar,"Ground Floor, Soul Space Paradigm, Next to Innovative Multiplex, Bata Showroom, Marathahalli, Bangalore",Brookefield,Brookefield,"North Indian,Continental,Chinese,Thai",1300,4.5,2949,"Bar, Casual Dining"
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3125,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"North Indian,Mughlai,Salad",1300,4.5,3458,Casual Dining
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",BTM,BTM,"Italian,Salad",1500,4.5,710,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",BTM,BTM,"Cafe,Continental,Burger",900,4.5,1874,Cafe
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,Italian,Fast Food",800,4.5,3826,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2594,"Dessert Parlor, Cafe"
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,Continental,Mediterranean,Beverages",900,4.5,546,Cafe
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",BTM,BTM,"Desserts,Cafe",500,4.5,334,"Dessert Parlor, Cafe"
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",BTM,BTM,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1181,Delivery
+Corner House Ice Cream,"1001, 9th Main, Sector 7, HSR Layout, Bangalore, HSR, Bangalore",BTM,BTM,"Ice Cream,Desserts",400,4.5,206,Dessert Parlor
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",BTM,BTM,"Desserts,Beverages",400,4.5,554,Dessert Parlor
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",BTM,BTM,"Continental,Mexican,Chinese,North Indian",800,4.5,799,Casual Dining
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",BTM,BTM,"Lebanese,Turkish",1200,4.5,181,Casual Dining
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",BTM,BTM,"Steak,Continental,Burger,BBQ",1200,4.5,2062,Casual Dining
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",BTM,BTM,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.5,1877,"Casual Dining, Bar"
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",BTM,BTM,"Italian,Pizza,Salad",1300,4.5,245,Casual Dining
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Finger Food,Continental,North Indian",1000,4.5,3902,"Pub, Casual Dining"
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Chinese,Sushi,Asian,Thai",1400,4.5,678,Casual Dining
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",BTM,BTM,"Desserts,Beverages",400,4.5,583,Dessert Parlor
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",BTM,BTM,"Healthy Food,North Indian,Biryani,Continental,Desserts",500,4.5,1238,Delivery
+Sixth Avenue Cafe And Patisserie,"44, 4th B Cross Rd, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,Italian,Desserts",600,4.5,210,"Cafe, Dessert Parlor"
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2668,"Dessert Parlor, Cafe"
+Corner House Ice Cream,"1225, 26th Main, 9th Block, Jayanagar, Bangalore",BTM,BTM,"Ice Cream,Desserts",400,4.5,847,Dessert Parlor
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",BTM,BTM,"Desserts,Beverages,Cafe,Ice Cream",300,4.5,360,"Dessert Parlor, Cafe"
+Bombay Adda,"6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore",BTM,BTM,Modern Indian,1100,4.5,2225,"Casual Dining, Bar"
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Continental,North Indian,Chinese,American,Pizza",1300,4.5,2540,"Bar, Casual Dining"
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",BTM,BTM,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6348,"Bar, Casual Dining"
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,1932,"Microbrewery, Casual Dining"
+Chinita Real Mexican Food,"25, 1st Floor, 5th Cross, Koramangala 5th Block, Bangalore",BTM,BTM,Mexican,1200,4.5,729,Casual Dining
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",BTM,BTM,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6349,"Bar, Casual Dining"
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Finger Food,Continental,North Indian",1000,4.5,3903,"Pub, Casual Dining"
+Bombay Adda,"6, Z1 Construction Building, 5th Floor, Next To Sapna Book House, 20th Main Road, Koramangala 7th Block, Bangalore",BTM,BTM,Modern Indian,1100,4.5,2233,"Casual Dining, Bar"
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",BTM,BTM,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3130,"Casual Dining, Bar"
+Mainland China,"First Floor, 14, Church Street, Bangalore",Church Street,Church Street,"Chinese,Momos",1700,4.5,1401,"Casual Dining, Bar"
+Olive Bar And Kitchen,"16, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Church Street,Church Street,"Mediterranean,European,Salad",1800,4.5,2198,Casual Dining
+Truffles,"22, St. Marks Road, Bangalore",Church Street,Church Street,"Cafe,American,Burger,Steak",900,4.5,3573,Cafe
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Church Street,Church Street,"Italian,Pizza,Salad",1300,4.5,1623,Casual Dining
+Fabelle Chocolate Boutique - ITC Gardenia,"ITC Gardenia, 1, Ashok Nagar, Residency Road, Bangalore",Church Street,Church Street,"Desserts,Ice Cream,Beverages",1250,4.5,233,Dessert Parlor
+Corner House Ice Cream,"4, Madras Bank Road, Lavelle Road, Bangalore",Church Street,Church Street,"Ice Cream,Desserts",400,4.5,292,Dessert Parlor
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",Church Street,Church Street,"American,Continental,Salad",2000,4.5,8382,"Pub, Microbrewery"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Church Street,Church Street,"American,BBQ",2500,4.5,5265,"Casual Dining, Bar"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Church Street,Church Street,South Indian,1500,4.5,1576,"Casual Dining, Bar"
+Karavalli - The Gateway Hotel,"Gateway Hotel, 66, Residency Road, Bangalore",Church Street,Church Street,"Mangalorean,Konkan,Seafood,Kerala",3500,4.5,675,Fine Dining
+Republic Of Noodles - Lemon Tree Premier,"Lemon Tree Premier, 2/1, St. Johns Road, Ulsoor, Bangalore",Church Street,Church Street,"Malaysian,Singaporean,Thai",1800,4.5,550,Casual Dining
+Siddiqu Kabab Center,"44, Aga Abudullah Street, Richmond Road, Bangalore",Church Street,Church Street,"North Indian,Rolls",250,4.5,174,Quick Bites
+Chikkanna Tiffin Room,"Near Ulsoor Gate Police Station, Cubbonpet, City Market, Bangalore",Church Street,Church Street,South Indian,150,4.5,203,Quick Bites
+Onesta,"Sy No: 54/2 ( Old Sy no 54 ), Above BATA showroom Bommasandra Village, Attible Hobbli, Anekal Taluk, Bengaluru, Karnataka 560099",Electronic City,Electronic City,"Pizza,Cafe,Italian",600,4.5,863,"Casual Dining, Cafe"
+eat.fit,"1/8, 1st Stage, 1st Cross, KK Computers Building, Shri Krishna Temple Road, Indiranagar, Bangalore",Frazer Town,Frazer Town,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,857,Delivery
+Mainland China,"First Floor, 14, Church Street, Bangalore",Frazer Town,Frazer Town,"Chinese,Momos",1700,4.5,1401,"Casual Dining, Bar"
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Frazer Town,Frazer Town,"Italian,Pizza,Salad",1300,4.5,1623,Casual Dining
+Republic Of Noodles - Lemon Tree Premier,"Lemon Tree Premier, 2/1, St. Johns Road, Ulsoor, Bangalore",Frazer Town,Frazer Town,"Malaysian,Singaporean,Thai",1800,4.5,550,Casual Dining
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",HSR,HSR,"Lebanese,Turkish",1200,4.5,188,Casual Dining
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",HSR,HSR,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1181,Delivery
+XO Belgian Waffle,"27th Main road, Sriven Teesta, Near Raymond?s Showroom HSR, Bangalore",HSR,HSR,"Desserts,Beverages",400,4.5,143,Dessert Parlor
+Apsara Ice Cream,"1782, Opposite Namma Shuttle, 19th Main, Sector 1, HSR, Bangalore",HSR,HSR,"Ice Cream,Desserts",200,4.5,194,Dessert Parlor
+Suryawanshi,"71/1A, 1st Floor, Kaikondrahalli, Sarjapur Main Road, Bengaluru, Karnataka",HSR,HSR,"Maharashtrian,Seafood",700,4.5,125,Casual Dining
+OPUS Club,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",HSR,HSR,"Continental,Italian,North Indian,Mexican",1900,4.5,1506,Pub
+Corner House Ice Cream,"1001, 9th Main, Sector 7, HSR Layout, Bangalore, HSR, Bangalore",HSR,HSR,"Ice Cream,Desserts",400,4.5,206,Dessert Parlor
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",HSR,HSR,"Steak,Continental,Burger,BBQ",1200,4.5,2068,Casual Dining
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",HSR,HSR,"Lebanese,Turkish",1200,4.5,196,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",HSR,HSR,"Italian,Pizza,Salad",1300,4.5,247,Casual Dining
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",HSR,HSR,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.5,1878,"Casual Dining, Bar"
+XO Belgian Waffle,"27th Main road, Sriven Teesta, Near Raymond?s Showroom HSR, Bangalore",HSR,HSR,"Desserts,Beverages",400,4.5,144,Dessert Parlor
+eat.fit,"39/12, 5th Main Road, Iblur Village, Outer Ring Road, Behind Enzo Hotel, Bellandur, Bangalore",HSR,HSR,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,634,Delivery
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",HSR,HSR,"Steak,Continental,Burger,BBQ",1200,4.5,2069,Casual Dining
+OPUS Club,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",HSR,HSR,"Continental,Italian,North Indian,Mexican",1900,4.5,1508,Pub
+Pasta Street,"2022, 100 Feet Road,HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Italian,Pizza,Salad",1300,4.5,1614,Casual Dining
+Monet's Bistro,"9B, Binnamangala, Manavarthekaval, Michealpalya, 80 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Cafe,Beverages",600,4.5,197,Cafe
+Stoner,"50, Zatakia Centre, 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Cafe,Beverages,Burger,Desserts",550,4.5,2687,"Dessert Parlor, Cafe"
+Delhi Highway,"951, 12th Main Road, HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,North Indian,1200,4.5,3219,Casual Dining
+Pasta Street,"2022, 100 Feet Road,HAL 2nd Stage, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Italian,Pizza,Salad",1300,4.5,1619,Casual Dining
+Stoner,"50, Zatakia Centre, 100 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Ice Cream,Cafe,Beverages,Burger,Desserts",550,4.5,2686,"Dessert Parlor, Cafe"
+Bologna,"759, 1st Floor, 100 Feet Road, Indira Nagar, Bangalore",Indiranagar,Indiranagar,Italian,1000,4.5,717,Casual Dining
+Monet's Bistro,"9B, Binnamangala, Manavarthekaval, Michealpalya, 80 Feet Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Cafe,Beverages",600,4.5,198,Cafe
+Pot-O-Noodles,"201, Double Road, Indiranagar, Bangalore",Indiranagar,Indiranagar,"Chinese,Asian,Japanese",800,4.5,60,Casual Dining
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Jayanagar,Jayanagar,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1187,Delivery
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Jayanagar,Jayanagar,"Desserts,Beverages",400,4.5,557,Dessert Parlor
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,"Desserts,Cafe",300,4.5,339,"Dessert Parlor, Cafe"
+Shakes Theory,"766/25-01, 47th A Cross, Near Sangam Circle, Adarsh Gardens Apartments Road, 8th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Beverages,Sandwich",300,4.5,155,Beverage Shop
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Jayanagar,Jayanagar,"Continental,Mexican,Chinese,North Indian",800,4.5,803,Casual Dining
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2608,"Dessert Parlor, Cafe"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Jayanagar,Jayanagar,"Italian,Salad",1500,4.5,715,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Jayanagar,Jayanagar,"Cafe,Continental,Burger",900,4.5,1878,Cafe
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3151,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Jayanagar,Jayanagar,"North Indian,Mughlai,Salad",1300,4.5,3464,Casual Dining
+Milano Ice Cream,"7, 9th Main, 5th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Ice Cream,Desserts",400,4.5,208,Dessert Parlor
+Meghana Foods,"52, 1st Floor, 33rd Cross, 4th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Biryani,North Indian,Chinese",600,4.5,4455,Casual Dining
+Karma Kaapi,"81, 36th Cross Road, 5th Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,"Beverages,Tea",250,4.5,184,Beverage Shop
+Bengaluru Cafe,"6, 9th Cross, 9th Main, 2nd Block, Jayanagar, Bangalore",Jayanagar,Jayanagar,South Indian,150,4.5,135,Quick Bites
+Chianti,"172/1, Unit 3, 3rd Floor, Vega City Mall, Srinivasa Industrial Estate, Bannerghatta Road, Bangalore",Jayanagar,Jayanagar,Italian,1500,4.5,800,Casual Dining
+Galito's,"Vega City Mall, 3rd Floor, Bannerghatta Road, Bangalore",Jayanagar,Jayanagar,"African,Burger",1000,4.5,414,Casual Dining
+Levitate Brewery and Kitchen,"57, 1st Main Rd, Sarakki Industrial Layout, 3rd Phase, JP Nagar, Bengaluru",Jayanagar,Jayanagar,"Finger Food,North Indian,Continental",1500,4.5,456,"Microbrewery, Casual Dining"
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",JP Nagar,JP Nagar,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1185,Delivery
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",JP Nagar,JP Nagar,"Desserts,Beverages",400,4.5,556,Dessert Parlor
+Shakes Theory,"766/25-01, 47th A Cross, Near Sangam Circle, Adarsh Gardens Apartments Road, 8th Block, Jayanagar, Bangalore",JP Nagar,JP Nagar,"Beverages,Sandwich",300,4.5,155,Beverage Shop
+Meghana Foods,"52, 1st Floor, 33rd Cross, 4th Block, Jayanagar, Bangalore",JP Nagar,JP Nagar,"Biryani,North Indian,Chinese",600,4.5,4432,Casual Dining
+Milano Ice Cream,"7, 9th Main, 5th Block, Jayanagar, Bangalore",JP Nagar,JP Nagar,"Ice Cream,Desserts",400,4.5,208,Dessert Parlor
+Hakuna Matata,"1231/35/2, 24th Main, 7th Phase, Opposite Brigade Palm Springs, JP Nagar, Bangalore",JP Nagar,JP Nagar,"North Indian,Asian,Seafood,Chinese",1200,4.5,2800,"Casual Dining, Bar"
+Chianti,"172/1, Unit 3, 3rd Floor, Vega City Mall, Srinivasa Industrial Estate, Bannerghatta Road, Bangalore",JP Nagar,JP Nagar,Italian,1500,4.5,787,Casual Dining
+Imperio Restaurant,"429, 7th Main Road, HRBR Layout, 1st Block, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,"North Indian,Mughlai,Biryani,South Indian,Beverages",800,4.5,1228,Casual Dining
+Truffles,"5M 408, Ground Floor, 5th Main, HRBR Layout, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,"Cafe,American,Burger,Steak",900,4.5,1181,"Cafe, Casual Dining"
+Avista Cafe Pizzeria,"356, 1st Floor, Hennur Main Road, Opposite Grace Garden Apartment, Hennur, Bangalore",Kalyan Nagar,Kalyan Nagar,"Cafe,Italian",650,4.5,506,Cafe
+One For The Road,"3rd Floor, Elements Mall, Thanisandra Main Road, Nagawara, Bangalore",Kalyan Nagar,Kalyan Nagar,"Continental,North Indian,Finger Food",1300,4.5,755,Bar
+Mainland China,"HRBR layout, 5AC 430,5th A cross , service road 2nd block ,Close to Girias, Ring Road, Kalyan Nagar, Bangalore",Kalyan Nagar,Kalyan Nagar,"Chinese,Momos",1100,4.5,1013,Casual Dining
+OKI,"403, Mariappa Road, Off Kammanahalli Main Road, Near Sena Vihar, Kammanahalli, Bangalore",Kalyan Nagar,Kalyan Nagar,"Asian,European,Italian,Korean,Malaysian",1200,4.5,418,Casual Dining
+Truffles,"5M 408, Ground Floor, 5th Main, HRBR Layout, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"Cafe,American,Burger,Steak",900,4.5,1181,"Cafe, Casual Dining"
+Avista Cafe Pizzeria,"356, 1st Floor, Hennur Main Road, Opposite Grace Garden Apartment, Hennur, Bangalore",Kammanahalli,Kammanahalli,"Cafe,Italian",650,4.5,506,Cafe
+Imperio Restaurant,"429, 7th Main Road, HRBR Layout, 1st Block, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"North Indian,Mughlai,Biryani,South Indian,Beverages",800,4.5,1228,Casual Dining
+One For The Road,"3rd Floor, Elements Mall, Thanisandra Main Road, Nagawara, Bangalore",Kammanahalli,Kammanahalli,"Continental,North Indian,Finger Food",1300,4.5,755,Bar
+OKI,"403, Mariappa Road, Off Kammanahalli Main Road, Near Sena Vihar, Kammanahalli, Bangalore",Kammanahalli,Kammanahalli,"Asian,European,Italian,Korean,Malaysian",1200,4.5,418,Casual Dining
+Mainland China,"HRBR layout, 5AC 430,5th A cross , service road 2nd block ,Close to Girias, Ring Road, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"Chinese,Momos",1100,4.5,1013,Casual Dining
+OKI,"403, Mariappa Road, Off Kammanahalli Main Road, Near Sena Vihar, Kammanahalli, Bangalore",Kammanahalli,Kammanahalli,"Asian,European,Italian,Korean,Malaysian",1200,4.5,435,Casual Dining
+Truffles,"5M 408, Ground Floor, 5th Main, HRBR Layout, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"Cafe,American,Burger,Steak",900,4.5,1239,"Cafe, Casual Dining"
+Mainland China,"HRBR layout, 5AC 430,5th A cross , service road 2nd block ,Close to Girias, Ring Road, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,Chinese,1100,4.5,1065,Casual Dining
+Brewklyn Microbrewery,"30, B.R.Plaza, 4th Floor, 4th Cross, CMR Road, HRBR Layout, Kalyan Nagar, Bangalore",Kammanahalli,Kammanahalli,"American,Continental,Pizza",2000,4.5,2330,"Microbrewery, Casual Dining"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,Mughlai,Salad",1300,4.5,3468,Casual Dining
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3156,"Casual Dining, Bar"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 4th Block,Koramangala 4th Block,"Italian,Salad",1500,4.5,717,Casual Dining
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Lebanese,Turkish",1200,4.5,217,Casual Dining
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Italian,Fast Food",800,4.5,3838,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2611,"Dessert Parlor, Cafe"
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,548,Cafe
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Cafe",300,4.5,341,"Dessert Parlor, Cafe"
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Continental,Burger",900,4.5,1880,Cafe
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Beverages",400,4.5,558,Dessert Parlor
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,804,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Italian,Pizza,Salad",1300,4.5,255,Casual Dining
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3944,"Casual Dining, Microbrewery"
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Steak,Continental,Burger,BBQ",1200,4.5,2071,Casual Dining
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.5,1888,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,Mughlai,Salad",1300,4.5,3467,Casual Dining
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Finger Food,Continental,North Indian",1000,4.5,3909,"Pub, Casual Dining"
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Italian,Fast Food",800,4.5,3842,Cafe
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,684,Casual Dining
+The Himalayan,"8/1, 1st Floor, Jailaxmi Nivas, 1st Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,Korean,1200,4.5,324,Casual Dining
+Natural Ice Cream,"1021, 80 Feet Main Road, Koramangala 1st Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Ice Cream,Beverages",200,4.5,940,Dessert Parlor
+Wild Thyme Restaurant,"145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Chinese,Continental,North Indian,Italian,Seafood",800,4.5,42,Casual Dining
+XO Belgian Waffle,"105, 1st A Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Beverages",400,4.5,833,Dessert Parlor
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2613,"Dessert Parlor, Cafe"
+eat.fit,"93/A 4th 'B' Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,151,Delivery
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Desserts,Cafe",300,4.5,342,"Dessert Parlor, Cafe"
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,Continental,North Indian,Salad",1800,4.5,7854,"Pub, Microbrewery"
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,North Indian,Pizza,Finger Food,Continental",1200,4.5,1228,"Microbrewery, Bar"
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Italian,Pizza,Salad",1300,4.5,256,Casual Dining
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Finger Food,Continental,North Indian",1000,4.5,3912,"Pub, Casual Dining"
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3161,"Casual Dining, Bar"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3950,"Casual Dining, Microbrewery"
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Italian,Fast Food",800,4.5,3843,Cafe
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,1991,"Microbrewery, Casual Dining"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 4th Block,Koramangala 4th Block,"Italian,Salad",1500,4.5,718,Casual Dining
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Finger Food,North Indian,Continental",1000,4.5,569,Bar
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,685,Casual Dining
+Chinita Real Mexican Food,"25, 1st Floor, 5th Cross, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,Mexican,1200,4.5,733,Casual Dining
+Nuts Over Salads Cafe,"1, Nirmala Mansion, 4th Cross, 17th A Main, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Salad",800,4.5,208,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2617,"Dessert Parlor, Cafe"
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,811,Casual Dining
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Lebanese,Turkish",1200,4.5,229,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Cafe,Continental,Burger",900,4.5,1879,Cafe
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"American,North Indian,Pizza,Finger Food,Continental",1200,4.5,1231,"Microbrewery, Bar"
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Finger Food,Continental,North Indian",1000,4.5,3915,"Pub, Casual Dining"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3967,"Casual Dining, Microbrewery"
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,1995,"Microbrewery, Casual Dining"
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 4th Block,Koramangala 4th Block,"Finger Food,North Indian,Continental",1000,4.5,571,Bar
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3163,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,Mughlai,Salad",1300,4.5,3467,Casual Dining
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 5th Block,Koramangala 5th Block,"Italian,Salad",1500,4.5,718,Casual Dining
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,Italian,Fast Food",800,4.5,3845,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2620,"Dessert Parlor, Cafe"
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,549,Cafe
+Nuts Over Salads Cafe,"1, Nirmala Mansion, 4th Cross, 17th A Main, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,Salad",800,4.5,208,Cafe
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Cafe",300,4.5,344,"Dessert Parlor, Cafe"
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Beverages",400,4.5,560,Dessert Parlor
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Finger Food,Continental,North Indian",1000,4.5,3915,"Pub, Casual Dining"
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Steak,Continental,Burger,BBQ",1200,4.5,2073,Casual Dining
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,811,Casual Dining
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,685,Casual Dining
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.5,1889,"Casual Dining, Bar"
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Italian,Pizza,Salad",1300,4.5,261,Casual Dining
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3967,"Casual Dining, Microbrewery"
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Cafe,Continental,Burger",900,4.5,1879,Cafe
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Lebanese,Turkish",1200,4.5,237,Casual Dining
+Wild Thyme Restaurant,"145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Chinese,Continental,North Indian,Italian,Seafood",800,4.5,42,Casual Dining
+Natural Ice Cream,"1021, 80 Feet Main Road, Koramangala 1st Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Ice Cream,Beverages",200,4.5,941,Dessert Parlor
+IceBreakers,"15, 60 Feet Road, 19th Main, Koramangala 6th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Desserts,Ice Cream",500,4.5,493,Dessert Parlor
+Chinita Real Mexican Food,"25, 1st Floor, 5th Cross, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,Mexican,1200,4.5,733,Casual Dining
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,1995,"Microbrewery, Casual Dining"
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"American,Continental,North Indian,Salad",1800,4.5,7854,"Pub, Microbrewery"
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"American,North Indian,Pizza,Finger Food,Continental",1200,4.5,1231,"Microbrewery, Bar"
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Finger Food,North Indian,Continental",1000,4.5,571,Bar
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,816,Casual Dining
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Finger Food,Continental,North Indian",1000,4.5,3914,"Pub, Casual Dining"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3987,"Casual Dining, Microbrewery"
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,2005,"Microbrewery, Casual Dining"
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6377,"Bar, Casual Dining"
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"American,Continental,North Indian,Salad",1800,4.5,7856,"Pub, Microbrewery"
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 5th Block,Koramangala 5th Block,"Finger Food,North Indian,Continental",1000,4.5,577,Bar
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,Mughlai,Salad",1300,4.5,3469,Casual Dining
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3163,"Casual Dining, Bar"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 6th Block,Koramangala 6th Block,"Italian,Salad",1500,4.5,721,Casual Dining
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Italian,Fast Food",800,4.5,3847,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2621,"Dessert Parlor, Cafe"
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,550,Cafe
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Cafe",300,4.5,345,"Dessert Parlor, Cafe"
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Continental,Burger",900,4.5,1879,Cafe
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1193,Delivery
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Beverages",400,4.5,563,Dessert Parlor
+Once Upon A Flame,"36, 1st Floor, 14th Main Road, 7th Sector, 80 Feet Main Road, Opposite Vedantu Online Learning Center, HSR, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Steak,Continental,Burger,BBQ",1200,4.5,2072,Casual Dining
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,816,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Italian,Pizza,Salad",1300,4.5,263,Casual Dining
+Roots,"43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,South Indian,Chinese,Continental,Mangalorean",1200,4.5,1889,"Casual Dining, Bar"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3987,"Casual Dining, Microbrewery"
+Bonum cibum,"1502, Ground Floor, Sector 1, HSR Layout, HSR, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Lebanese,Turkish",1200,4.5,253,Casual Dining
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Finger Food,Continental,North Indian",1000,4.5,3914,"Pub, Casual Dining"
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,686,Casual Dining
+Natural Ice Cream,"1021, 80 Feet Main Road, Koramangala 1st Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Ice Cream,Beverages",200,4.5,941,Dessert Parlor
+IceBreakers,"15, 60 Feet Road, 19th Main, Koramangala 6th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Desserts,Ice Cream",500,4.5,494,Dessert Parlor
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Finger Food,North Indian,Continental",1000,4.5,578,Bar
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Finger Food,Continental,North Indian",1000,4.5,3919,"Pub, Casual Dining"
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3170,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"North Indian,Mughlai,Salad",1300,4.5,3471,Casual Dining
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Italian,Fast Food",800,4.5,3849,Cafe
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"American,Continental,North Indian,Salad",1800,4.5,7862,"Pub, Microbrewery"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3991,"Casual Dining, Microbrewery"
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6383,"Bar, Casual Dining"
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Finger Food,Asian,North Indian",1400,4.5,905,"Microbrewery, Casual Dining"
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,2011,"Microbrewery, Casual Dining"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 6th Block,Koramangala 6th Block,"Italian,Salad",1500,4.5,724,Casual Dining
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,688,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Italian,Pizza,Salad",1300,4.5,267,Casual Dining
+Chinita Real Mexican Food,"25, 1st Floor, 5th Cross, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,Mexican,1200,4.5,739,Casual Dining
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,553,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2627,"Dessert Parlor, Cafe"
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,819,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 6th Block,Koramangala 6th Block,"Cafe,Continental,Burger",900,4.5,1880,Cafe
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 7th Block,Koramangala 7th Block,"Italian,Salad",1500,4.5,724,Casual Dining
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3170,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,Mughlai,Salad",1300,4.5,3471,Casual Dining
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Italian,Fast Food",800,4.5,3849,Cafe
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2627,"Dessert Parlor, Cafe"
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,553,Cafe
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Cafe",300,4.5,346,"Dessert Parlor, Cafe"
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Continental,Burger",900,4.5,1880,Cafe
+eat.fit,"96, 29th Main, 23rd Cross, 2nd Stage, BTM, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,1195,Delivery
+XO Belgian Waffle,"948, 16th Main, MICO Layout, 2nd Stage, BTM, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Beverages",400,4.5,565,Dessert Parlor
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,819,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Italian,Pizza,Salad",1300,4.5,267,Casual Dining
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3991,"Casual Dining, Microbrewery"
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Finger Food,Continental,North Indian",1000,4.5,3919,"Pub, Casual Dining"
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,688,Casual Dining
+Natural Ice Cream,"1021, 80 Feet Main Road, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Beverages",200,4.5,941,Dessert Parlor
+Corner House Ice Cream,"67-7-61, 1st A Main, Koramangala 7th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Desserts",400,4.5,1547,Dessert Parlor
+XO Belgian Waffle,"105, 1st A Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Beverages",400,4.5,835,Dessert Parlor
+Stoner,"Elite Building Ground Floor, Industrial Layout, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Cafe,Pizza,Burger,Desserts",500,4.5,2629,"Dessert Parlor, Cafe"
+99 Pancakes,"70, Jyoti Nivas College Road, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Beverages,Cafe,Ice Cream",300,4.5,349,"Dessert Parlor, Cafe"
+IceBreakers,"15, 60 Feet Road, 19th Main, Koramangala 6th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Desserts,Ice Cream",500,4.5,499,Dessert Parlor
+Natural Ice Cream,"1021, 80 Feet Main Road, Koramangala 1st Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Ice Cream,Beverages",200,4.5,942,Dessert Parlor
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6385,"Bar, Casual Dining"
+Toscano,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore Koramangala 7th Block",Koramangala 7th Block,Koramangala 7th Block,"Italian,Salad",1500,4.5,727,Casual Dining
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3174,"Casual Dining, Bar"
+Sultans of Spice,"BluPetal Hotel, 60 Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,Mughlai,Salad",1300,4.5,3473,Casual Dining
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,North Indian,Chinese,American",1300,4.5,2597,"Bar, Casual Dining"
+Dyu Art Cafe,"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Italian,Fast Food",800,4.5,3854,Cafe
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,Continental,North Indian,Salad",1800,4.5,7870,"Pub, Microbrewery"
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.5,3996,"Casual Dining, Microbrewery"
+The Terrace at Gilly's Redefined,"413, 100 Feet Road, Next E-Zone, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Finger Food,Asian,North Indian",1400,4.5,911,"Microbrewery, Casual Dining"
+Simon Says Brew Works,"105, 3rd Floor, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,American,Italian,Modern Indian,Pizza",1400,4.5,2014,"Microbrewery, Casual Dining"
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,North Indian,Pizza,Finger Food,Continental",1200,4.5,1250,"Microbrewery, Bar"
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Finger Food,North Indian,Continental",1000,4.5,580,Bar
+Big Wong XL,"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Chinese,Sushi,Asian,Thai",1400,4.5,697,Casual Dining
+Pasta Street,"751, 80 Feet Road, Opposite SBI Bank, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Italian,Pizza,Salad",1300,4.5,272,Casual Dining
+Chinita Real Mexican Food,"25, 1st Floor, 5th Cross, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,Mexican,1200,4.5,740,Casual Dining
+Market Table,"10, Fifth A Block, 17th B Main, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Continental,Mediterranean,Beverages",900,4.5,556,Cafe
+Pin Me Down,"29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,Mexican,Chinese,North Indian",800,4.5,823,Casual Dining
+Mudpipe Cafe,"1, KDP Building, 4th Floor, Near Forum Mall, Above NEXA showroom, Hosur Road, BTM, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Cafe,Continental,Burger",900,4.5,1883,Cafe
+Fenny's Lounge And Kitchen,"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Mediterranean,Pizza,Continental,Seafood,Salad",1600,4.5,6384,"Bar, Casual Dining"
+Gilly's Restobar,"91, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Finger Food,Continental,North Indian",1000,4.5,3923,"Pub, Casual Dining"
+Buff Buffet Buff,"60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"North Indian,Chinese,Continental,Thai,Salad",1500,4.5,3177,"Casual Dining, Bar"
+The Reservoire,"17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Continental,North Indian,Chinese,American",1300,4.5,2601,"Bar, Casual Dining"
+Prost Brew Pub,"749, 10th Main, 80 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,Continental,North Indian,Salad",1800,4.5,7871,"Pub, Microbrewery"
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"American,North Indian,Pizza,Finger Food,Continental",1200,4.5,1251,"Microbrewery, Bar"
+The Old Fashioned Bar,"470, 80 Feet Road, Koramangala 6th Block, Bangalore",Koramangala 7th Block,Koramangala 7th Block,"Finger Food,North Indian,Continental",1000,4.5,582,Bar
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Lavelle Road,Lavelle Road,"Bengali,Seafood",1200,4.5,1122,"Casual Dining, Bar"
+Mainland China,"First Floor, 14, Church Street, Bangalore",Lavelle Road,Lavelle Road,Chinese,1700,4.5,1418,"Casual Dining, Bar"
+Truffles,"22, St. Marks Road, Bangalore",Lavelle Road,Lavelle Road,"Cafe,American,Burger,Steak",900,4.5,3589,Cafe
+eat.fit,"1/8, 1st Stage, 1st Cross, KK Computers Building, Shri Krishna Temple Road, Indiranagar, Bangalore",Lavelle Road,Lavelle Road,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.5,869,Delivery
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,"Desserts,Beverages",450,4.5,221,Food Court
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Lavelle Road,Lavelle Road,"Italian,Pizza,Salad",1300,4.5,1636,Casual Dining
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Lavelle Road,Lavelle Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1238,"Casual Dining, Bar"
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",Lavelle Road,Lavelle Road,"Asian,Thai",1800,4.5,871,Casual Dining
+Corner House Ice Cream,"4, Madras Bank Road, Lavelle Road, Bangalore",Lavelle Road,Lavelle Road,"Ice Cream,Desserts",400,4.5,291,Dessert Parlor
+Fabelle Chocolate Boutique - ITC Gardenia,"ITC Gardenia, 1, Ashok Nagar, Residency Road, Bangalore",Lavelle Road,Lavelle Road,"Desserts,Ice Cream,Beverages",1250,4.5,236,Dessert Parlor
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,"American,Continental",2000,4.5,8402,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,South Indian,1500,4.5,1597,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Lavelle Road,Lavelle Road,"American,BBQ",2500,4.5,5281,"Casual Dining, Bar"
+Karavalli - The Gateway Hotel,"Gateway Hotel, 66, Residency Road, Bangalore",Lavelle Road,Lavelle Road,"Mangalorean,Konkan,Seafood,Kerala",3500,4.5,681,Fine Dining
+Hae Kum Gang,"20, C/O Pauls Castle, Castle Street, Ashok Nagar",Lavelle Road,Lavelle Road,"Korean,Chinese,Japanese",1100,4.5,1204,Casual Dining
+Chianti,"No.18, Ramanashree Arcade, Ground Floor, Ashok Nagar Post, MG Road, Bangalore",Lavelle Road,Lavelle Road,Italian,1500,4.5,302,Casual Dining
+Chikkanna Tiffin Room,"Near Ulsoor Gate Police Station, Cubbonpet, City Market, Bangalore",Lavelle Road,Lavelle Road,South Indian,200,4.5,206,Quick Bites
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,"American,Continental",2000,4.5,8405,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Lavelle Road,Lavelle Road,South Indian,1500,4.5,1598,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Lavelle Road,Lavelle Road,"American,BBQ",2500,4.5,5282,"Casual Dining, Bar"
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Lavelle Road,Lavelle Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1239,"Casual Dining, Bar"
+Mainland China,"26/1, Orion Mall, Brigade Gateway Campus, Dr. Rajkumar Road, Near Yeshwantpur Malleshwaram, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,Chinese,1700,4.5,1150,Casual Dining
+"Lush - Renaissance Hotel, Bengaluru","17 and 17/1 Madhavanagar Extension, Race Course Lane, Race Course Road, Bangalore",Malleshwaram,Malleshwaram,"North Indian,Continental",1200,4.5,409,Casual Dining
+eat.fit,"69/A Ground Floor, West of Chord Road Layout, 2nd Stage, Rajajinagar, Bangalore",Malleshwaram,Malleshwaram,"Healthy Food,North Indian,Biryani,Continental,Desserts",500,4.5,230,Delivery
+The Asian Curry House,"3rd Floor, Mantri Square, Sampige Road, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,"Vietnamese,Thai,Burmese,Japanese",1000,4.5,785,Casual Dining
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Malleshwaram,Malleshwaram,"Italian,Pizza,Salad",1300,4.5,1636,Casual Dining
+Veena Stores,"187, 15th Cross, Margosa Road, Malleshwaram, Bangalore",Malleshwaram,Malleshwaram,South Indian,150,4.5,2407,Quick Bites
+HVR Veg,"162/1, 1st Main, Kumara Park West, Seshadripuram, Bangalore",Malleshwaram,Malleshwaram,South Indian,300,4.5,96,Quick Bites
+The London Curry House - The Royale Senate Hotel,"19/2, Kumara Krupa Road, Off Race Course Road, Bangalore",Malleshwaram,Malleshwaram,"Pizza,North Indian,Modern Indian",1300,4.5,3953,"Casual Dining, Bar"
+Gilly's Restobar,"4th & 5th Floor, Sree Premprasad Complex, Opposite Ramaiah Hospital, New BEL Road, Bangalore",Malleshwaram,Malleshwaram,"Continental,Finger Food,North Indian,Chinese",1200,4.5,2711,"Pub, Casual Dining"
+Gilly's Restobar,"4th & 5th Floor, Sree Premprasad Complex, Opposite Ramaiah Hospital, New BEL Road, Bangalore",Malleshwaram,Malleshwaram,"Continental,Finger Food,North Indian,Chinese",1200,4.5,2713,"Pub, Casual Dining"
+The London Curry House - The Royale Senate Hotel,"19/2, Kumara Krupa Road, Off Race Course Road, Bangalore",Malleshwaram,Malleshwaram,"Pizza,North Indian,Modern Indian",1300,4.5,3960,"Casual Dining, Bar"
+"3B's - Buddies, Bar & Barbecues","Rooftop, 90/4, Above AB's, Near Park Plaza Hotel, Outer Ring Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Mediterranean,European,BBQ",1100,4.5,1909,"Casual Dining, Bar"
+Jalsa Gold,"20\5, Panathur Junction, Outer Ring Road, Kadubeessanahalli, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Mughlai,Italian",1300,4.5,3486,Casual Dining
+Melange - Radisson Blu,"Radisson Blu, 90/4, Outer Ring Road, Munnekollaly Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Continental,Chinese,South Indian",2700,4.5,785,Fine Dining
+Polar Bear,"710, Thubarahalli, Varthur Main Road, Whitefield, Bangalore",Marathahalli,Marathahalli,"Desserts,Ice Cream",300,4.5,48,"Takeaway, Delivery"
+BITEBOX,"107/2A, Padma Building, Vivekananda Layout, Munnekolala, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Chinese,Mughlai,Desserts",300,4.5,157,Quick Bites
+HOMMS,"2A & 3, 15th Cross Rd, Below Zolo Stays Utopia, Green Garden Layout, Munnekollal, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Momos,Chinese,Fast Food",300,4.5,236,Quick Bites
+Corner House Ice Cream,"Tata Star Extra, Opposite Shankara Eye Hospital, Kundalahalli Gate, Varthur Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"Ice Cream,Desserts",400,4.5,971,Dessert Parlor
+Bloomsbury's Global Kitchen & Bakehouse,"Ground Floor, EPIP Zone, Near BMTC Bus Depot, Whitefield, Bangalore",Marathahalli,Marathahalli,"American,Cafe,Continental,French,Burger",900,4.5,751,"Cafe, Dessert Parlor"
+Rolls & Bowls,"279, Shop 3, 8th Main Road, BEML Layout, 6th Stage, Brookefield, Bangalore",Marathahalli,Marathahalli,"Rolls,Chinese",250,4.5,155,Quick Bites
+Nakkshatra,"88, 1st Floor, Outer Ring Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Chinese",900,4.5,443,Casual Dining
+Output Bengaluru,"Shop 36/4, 4th Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Continental",1000,4.5,900,"Pub, Casual Dining"
+Saffron - Radisson Blu,"Radisson Blu, 90/4, Outer Ring Road, Munnekollalu Village, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Mughlai,Lucknowi",2500,4.5,457,"Fine Dining, Bar"
+"3B's - Buddies, Bar & Barbecues","Rooftop, 90/4, Above AB's, Near Park Plaza Hotel, Outer Ring Road, Marathahalli, Bangalore",Marathahalli,Marathahalli,"North Indian,Mediterranean,European,BBQ",1100,4.5,1914,"Casual Dining, Bar"
+Olive Bar And Kitchen,"16, Wood Street, Ashok Nagar, Richmond Road, Bangalore",MG Road,MG Road,"Mediterranean,European,Salad",1800,4.5,2216,Casual Dining
+Mainland China,"First Floor, 14, Church Street, Bangalore",MG Road,MG Road,Chinese,1700,4.5,1429,"Casual Dining, Bar"
+Truffles,"22, St. Marks Road, Bangalore",MG Road,MG Road,"Cafe,American,Burger,Steak",900,4.5,3596,Cafe
+eat.fit,"1/8, 1st Stage, 1st Cross, KK Computers Building, Shri Krishna Temple Road, Indiranagar, Bangalore",MG Road,MG Road,"Healthy Food,North Indian,Biryani,Continental,Desserts",500,4.5,873,Delivery
+Chai Days,"2019, 100 Feet Road, Indiranagar, Bangalore",MG Road,MG Road,"Cafe,Tea,Beverages,Fast Food",200,4.5,131,Cafe
+Soda Bottle Opener Wala,"25/4, Opposite Harley Davidson Showroom, Lavelle Road, Bangalore",MG Road,MG Road,"Parsi,North Indian",1300,4.5,3709,"Casual Dining, Irani Cafee"
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",MG Road,MG Road,"Italian,Pizza,Salad",1300,4.5,1642,Casual Dining
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",MG Road,MG Road,"Asian,Thai",1800,4.5,873,Casual Dining
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",MG Road,MG Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1250,"Casual Dining, Bar"
+Truffles,"22, St. Marks Road, Bangalore",MG Road,MG Road,"Cafe,American,Burger,Steak",900,4.5,3595,Cafe
+Fabelle Chocolate Boutique - ITC Gardenia,"ITC Gardenia, 1, Ashok Nagar, Residency Road, Bangalore",MG Road,MG Road,"Desserts,Ice Cream,Beverages",1250,4.5,236,Dessert Parlor
+Corner House Ice Cream,"4, Madras Bank Road, Lavelle Road, Bangalore",MG Road,MG Road,"Ice Cream,Desserts",400,4.5,291,Dessert Parlor
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",MG Road,MG Road,"Desserts,Beverages",450,4.5,222,Food Court
+Chianti,"No.18, Ramanashree Arcade, Ground Floor, Ashok Nagar Post, MG Road, Bangalore",MG Road,MG Road,Italian,1500,4.5,308,Casual Dining
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",MG Road,MG Road,"American,Continental",2000,4.5,8413,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",MG Road,MG Road,South Indian,1500,4.5,1602,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",MG Road,MG Road,"American,BBQ",2500,4.5,5284,"Casual Dining, Bar"
+Karavalli - The Gateway Hotel,"Gateway Hotel, 66, Residency Road, Bangalore",MG Road,MG Road,"Mangalorean,Konkan,Seafood,Kerala",3500,4.5,681,Fine Dining
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",MG Road,MG Road,"Bengali,Seafood",1200,4.5,1135,"Casual Dining, Bar"
+Mainland China,"First Floor, 14, Church Street, Bangalore",MG Road,MG Road,Chinese,1700,4.5,1426,"Casual Dining, Bar"
+Republic Of Noodles - Lemon Tree Premier,"Lemon Tree Premier, 2/1, St. Johns Road, Ulsoor, Bangalore",MG Road,MG Road,"Malaysian,Singaporean,Thai",1800,4.5,556,Casual Dining
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",MG Road,MG Road,"American,Continental",2000,4.5,8414,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",MG Road,MG Road,South Indian,1500,4.5,1604,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",MG Road,MG Road,"American,BBQ",2500,4.5,5285,"Casual Dining, Bar"
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",MG Road,MG Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1255,"Casual Dining, Bar"
+Mainland China,"First Floor, 14, Church Street, Bangalore",MG Road,MG Road,Chinese,1700,4.5,1428,"Casual Dining, Bar"
+Corner House Ice Cream,"66, Siddhartha Plaza, Rajmahal Vilas, 2nd Stage, New BEL Road, Bangalore",New BEL Road,New BEL Road,"Ice Cream,Desserts",400,4.5,703,Dessert Parlor
+Gilly's Restobar,"4th & 5th Floor, Sree Premprasad Complex, Opposite Ramaiah Hospital, New BEL Road, Bangalore",New BEL Road,New BEL Road,"Continental,Finger Food,North Indian,Chinese",1200,4.5,2732,"Pub, Casual Dining"
+Hammered,"3, 80 Feet Road, Opposite MK Tower, RMV 2nd Stage, New BEL Road, Bangalore",New BEL Road,New BEL Road,"North Indian,Continental,Cafe",1200,4.5,2935,"Pub, Cafe"
+Pasta Street,"2022, 100 Feet Road,HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Italian,Pizza,Salad",1300,4.5,1670,Casual Dining
+Chai Days,"2019, 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Cafe,Tea,Beverages,Fast Food",200,4.5,132,Cafe
+eat.fit,"1/8, 1st Stage, 1st Cross, KK Computers Building, Shri Krishna Temple Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Healthy Food,North Indian,Biryani,Continental,Desserts",500,4.5,875,Delivery
+Sly Granny - The Community House,"3, 4 Floor, 618, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Modern Indian,European,American",2500,4.5,980,"Fine Dining, Bar"
+Pasta Street,"2022, 100 Feet Road,HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Italian,Pizza,Salad",1300,4.5,1673,Casual Dining
+Bologna,"759, 1st Floor, 100 Feet Road, Indira Nagar, Bangalore",Old Airport Road,Old Airport Road,Italian,1000,4.5,769,Casual Dining
+Haute,"776, 1st Floor, 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Continental,European,Asian,Seafood,Spanish",1200,4.5,117,Casual Dining
+Chai Days,"2019, 100 Feet Road, Indiranagar, Bangalore",Old Airport Road,Old Airport Road,"Cafe,Tea,Beverages,Fast Food",200,4.5,134,Cafe
+Barbeque Nation,"18,19, 20, Ground Floor, Westgate Mall, Dr Rajkumar Road, 4M Block, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.5,1282,Casual Dining
+"Lush - Renaissance Hotel, Bengaluru","17 and 17/1 Madhavanagar Extension, Race Course Lane, Race Course Road, Bangalore",Rajajinagar,Rajajinagar,"North Indian,Continental",1200,4.5,416,Casual Dining
+Mainland China,"26/1, Orion Mall, Brigade Gateway Campus, Dr. Rajkumar Road, Near Yeshwantpur Malleshwaram, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,Chinese,1700,4.5,1157,Casual Dining
+eat.fit,"69/A Ground Floor, West of Chord Road Layout, 2nd Stage, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"Healthy Food,North Indian,Biryani,Continental,Desserts",500,4.5,236,Delivery
+The Asian Curry House,"3rd Floor, Mantri Square, Sampige Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,"Vietnamese,Thai,Burmese,Japanese",1000,4.5,787,Casual Dining
+Veena Stores,"187, 15th Cross, Margosa Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,South Indian,150,4.5,2416,Quick Bites
+Barbeque Nation,"18,19, 20, Ground Floor, Westgate Mall, Dr Rajkumar Road, 4M Block, Rajajinagar, Bangalore",Rajajinagar,Rajajinagar,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.5,1284,Casual Dining
+"Lush - Renaissance Hotel, Bengaluru","17 and 17/1 Madhavanagar Extension, Race Course Lane, Race Course Road, Bangalore",Rajajinagar,Rajajinagar,"North Indian,Continental",1200,4.5,420,Casual Dining
+The Asian Curry House,"3rd Floor, Mantri Square, Sampige Road, Malleshwaram, Bangalore",Rajajinagar,Rajajinagar,"Vietnamese,Thai,Burmese,Japanese",1000,4.5,789,Casual Dining
+Olive Bar And Kitchen,"16, Wood Street, Ashok Nagar, Richmond Road, Bangalore",Residency Road,Residency Road,"Mediterranean,European,Salad",1800,4.5,2219,Casual Dining
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Residency Road,Residency Road,"Bengali,Seafood",1200,4.5,1142,"Casual Dining, Bar"
+Mainland China,"First Floor, 14, Church Street, Bangalore",Residency Road,Residency Road,Chinese,1700,4.5,1431,"Casual Dining, Bar"
+Truffles,"22, St. Marks Road, Bangalore",Residency Road,Residency Road,"Cafe,American,Burger,Steak",900,4.5,3599,Cafe
+Pasta Street,"37/2, Chicago Avenue, Opposite Fortis Hospital, Cunningham Road, Bangalore",Residency Road,Residency Road,"Italian,Pizza,Salad",1300,4.5,1648,Casual Dining
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",Residency Road,Residency Road,"Desserts,Beverages",450,4.5,222,Food Court
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Residency Road,Residency Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1258,"Casual Dining, Bar"
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",Residency Road,Residency Road,"Asian,Thai",1800,4.5,875,Casual Dining
+Fabelle Chocolate Boutique - ITC Gardenia,"ITC Gardenia, 1, Ashok Nagar, Residency Road, Bangalore",Residency Road,Residency Road,"Desserts,Ice Cream,Beverages",1250,4.5,236,Dessert Parlor
+Karavalli - The Gateway Hotel,"Gateway Hotel, 66, Residency Road, Bangalore",Residency Road,Residency Road,"Mangalorean,Konkan,Seafood,Kerala",3500,4.5,682,Fine Dining
+Arbor Brewing Company,"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Bangalore",Residency Road,Residency Road,"American,Continental",2000,4.5,8419,"Pub, Microbrewery"
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Residency Road,Residency Road,South Indian,1500,4.5,1610,"Casual Dining, Bar"
+ShakesBierre,"Level 5, Eva Mall, Brigade Road, Bangalore",Residency Road,Residency Road,"Asian,Continental,European,North Indian",1500,4.5,403,"Microbrewery, Casual Dining"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Residency Road,Residency Road,"American,BBQ",2500,4.5,5290,"Casual Dining, Bar"
+Chikkanna Tiffin Room,"Near Ulsoor Gate Police Station, Cubbonpet, City Market, Bangalore",Residency Road,Residency Road,South Indian,200,4.5,207,Quick Bites
+The Permit Room,"16/3, Commissariat Road, Brigade Road, Bangalore",Residency Road,Residency Road,South Indian,1500,4.5,1611,"Casual Dining, Bar"
+Hard Rock Cafe,"40, Opposite LIC Building, Off MG Road, St. Marks Road, Bangalore",Residency Road,Residency Road,"American,BBQ",2500,4.5,5294,"Casual Dining, Bar"
+MISU,"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Bangalore",Residency Road,Residency Road,"Asian,Japanese,Korean,Indonesian,Malaysian",1700,4.5,1260,"Casual Dining, Bar"
+Opus Food Stories,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"Goan,Asian,North Indian,European,Continental",1800,4.5,200,"Bar, Casual Dining"
+Vapour Brewpub and Diner,"7th Floor, Bren Mercury, Kaikondrahalli Junction, Sarjapur Road, Bangalore",Sarjapur Road,Sarjapur Road,"North Indian,Continental,Italian",1400,4.5,2878,"Microbrewery, Pub"
+Empire Restaurant,"4, Opposite NMKRV College, 21st C Cross Road, 3rd Block, Jayanagar, Bangalore",Banashankari,Banashankari,"North Indian,Mughlai,South Indian,Chinese",750,4.4,4884,Casual Dining
+Meghana Foods,"52, 1st Floor, 33rd Cross, 4th Block, Jayanagar, Bangalore",Banashankari,Banashankari,"Biryani,North Indian,Chinese",600,4.4,4401,Casual Dining
+Karma Kaapi,"81, 36th Cross Road, 5th Block, Jayanagar, Bangalore",Banashankari,Banashankari,"Beverages,Tea",250,4.4,181,Beverage Shop
+Poonam Sweets,"43, BDA Complex, 2nd Stage, Banashankari, Bangalore",Banashankari,Banashankari,Mithai,150,4.4,356,Sweet Shop
+Sri Laxmi Venkateshwara Coffee Bar,"187, 16th Main, 24th Cross, 2nd Stage, Banashankari, Bangalore",Banashankari,Banashankari,South Indian,100,4.4,343,Quick Bites
+Vidyarthi Bhavan,"32, Gandhi Bazaar, Near Gandhi Bazaar Circle, Basavanagudi, Bangalore",Banashankari,Banashankari,South Indian,150,4.4,4460,Quick Bites
+Deja Vu Resto Bar,"5th Floor, Gopalan Innovation Mall, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,Italian",900,4.4,2487,Pub
+Onesta,"Site 15, 15th Cross, 100 Feet Road, 4th Phase, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"Pizza,Cafe,Italian",600,4.4,4381,"Casual Dining, Cafe"
+Corner House Ice Cream,"1225, 26th Main, 9th Block, Jayanagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"Ice Cream,Desserts",400,4.4,819,Dessert Parlor
+Chavadi,"4, Arama Suites, Sarvabhouma Nagar, Off Bannerghatta Road, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"Continental,North Indian,Pizza,Italian",1200,4.4,2233,"Casual Dining, Bar"
+Brewsky,"55, 5th Floor, Goenka Chambers, 19th Main Road, Jeewan Griha Colony, Phase 2, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"Continental,American",1600,4.4,4309,Microbrewery
+Drunken Monkey,"54/55, 3rd Cross, Omkar Nagar, Arekere Gate, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"Beverages,Fast Food",400,4.4,288,"Beverage Shop, Quick Bites"
+Waffle Walle,"Royal Meenakshi Mall, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"Desserts,Belgian,Beverages",500,4.4,677,Kiosk
+Brewsky,"55, 5th Floor, Goenka Chambers, 19th Main Road, Jeewan Griha Colony, Phase 2, JP Nagar, Bangalore",Bannerghatta Road,Bannerghatta Road,"Continental,American",1600,4.4,4312,Microbrewery
+Deja Vu Resto Bar,"5th Floor, Gopalan Innovation Mall, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"North Indian,Italian",900,4.4,2488,Pub
+Chavadi,"4, Arama Suites, Sarvabhouma Nagar, Off Bannerghatta Road, Bannerghatta Road, Bangalore",Bannerghatta Road,Bannerghatta Road,"Continental,North Indian,Pizza,Italian",1200,4.4,2237,"Casual Dining, Bar"
+Empire Restaurant,"4, Opposite NMKRV College, 21st C Cross Road, 3rd Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"North Indian,Mughlai,South Indian,Chinese",750,4.4,4884,Casual Dining
+Meghana Foods,"52, 1st Floor, 33rd Cross, 4th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Biryani,North Indian,Chinese",600,4.4,4401,Casual Dining
+Bubblewrap Waffle Co.,"663, 11th Main, 34th Cross, 4th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Desserts,Beverages",400,4.4,356,Dessert Parlor
+Shake It Off,"2,1478/1, 18th Main, 40th Cross, 4th T Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Beverages,Fast Food",600,4.4,659,"Beverage Shop, Quick Bites"
+Karma Kaapi,"81, 36th Cross Road, 5th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Beverages,Tea",250,4.4,181,Beverage Shop
+Cable Car,"No.24, 46th Cross, 5th Block Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"North Indian,Italian",1000,4.4,1224,Casual Dining
+Natural Ice Cream,"9 & 10, Ground Floor, Das Commercial Complex, 7th Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"Ice Cream,Desserts",150,4.4,366,Dessert Parlor
+Poonam Sweets,"43, BDA Complex, 2nd Stage, Banashankari, Bangalore",Basavanagudi,Basavanagudi,Mithai,150,4.4,356,Sweet Shop
+Vidyarthi Bhavan,"32, Gandhi Bazaar, Near Gandhi Bazaar Circle, Basavanagudi, Bangalore",Basavanagudi,Basavanagudi,South Indian,150,4.4,4460,Quick Bites
+Empire Restaurant,"4, Opposite NMKRV College, 21st C Cross Road, 3rd Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,"North Indian,Mughlai,South Indian,Chinese",750,4.4,5060,Casual Dining
+Bengaluru Cafe,"6, 9th Cross, 9th Main, 2nd Block, Jayanagar, Bangalore",Basavanagudi,Basavanagudi,South Indian,150,4.4,134,Quick Bites
+Sri Laxmi Venkateshwara Coffee Bar,"187, 16th Main, 24th Cross, 2nd Stage, Banashankari, Bangalore",Basavanagudi,Basavanagudi,South Indian,100,4.4,343,Quick Bites
+The Fisherman's Wharf,"26, Opposite Shubh Enclave, Ambalipura Village, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Seafood,Goan,North Indian,Continental,Asian",1400,4.4,4099,"Casual Dining, Bar"
+Tipsy Bull - The Bar Exchange,"24-26, 414/80/2, Varthur Hobli, Outer Ring Road",Bellandur,Bellandur,"North Indian,Chinese,Continental,Mexican",1400,4.4,2182,"Bar, Casual Dining"
+eat.fit,"39/12, 5th Main Road, Iblur Village, Outer Ring Road, Behind Enzo Hotel, Bellandur, Bangalore",Bellandur,Bellandur,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.4,632,Delivery
+nu.tree,"36 Aarush, Sri Balaji Layout, Ambulipura, Sarjapur Road, Bangalore",Bellandur,Bellandur,"North Indian,Healthy Food,Beverages",400,4.4,278,Delivery
+Onesta,"2318, 27th Main Road, 1st Sector, HSR, Bangalore",Bellandur,Bellandur,"Pizza,Cafe,Italian",600,4.4,3738,"Casual Dining, Cafe"
+Dhaba Estd 1986 Delhi,"1st Floor, NTR Royal Plaza, Outer Ring Road, Marathahalli, Bangalore",Bellandur,Bellandur,North Indian,1100,4.4,1209,"Casual Dining, Bar"
+La Casa Brewery And Kitchen,"15, Amrita Engineering College Road, Kasavanahalli, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Finger Food,Continental,Seafood",1500,4.4,1381,"Microbrewery, Casual Dining"
+Float,"20\5, Panathur Junction, Outer Ring Road, Kadubeessanahalli, Marathahalli, Bangalore",Bellandur,Bellandur,"North Indian,Japanese",1500,4.4,3061,"Casual Dining, Bar"
+Kanua,"6/2, Near Wipro Headquaters, Kaikondrahalli, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Konkan,Mangalorean,Seafood",1400,4.4,889,Casual Dining
+Foxtrot,"89/1, Monnekollal Village, Varthur Hobli, Outer Ring Road, Marathahalli, Bangalore",Bellandur,Bellandur,"North Indian,Chinese,Continental,Momos",1200,4.4,1146,"Pub, Casual Dining"
+Le Gateau - The Cake Shop,"33/4, Narayanamma Garden, 8th Cross, Konen Agrahara, Murugeshpalya, Old Airport Road, Bangalore",Bellandur,Bellandur,"Desserts,Bakery",600,4.4,536,Delivery
+OPUS Club,"26, Varthur Hobli, Near HP Petrol Bunk, Harlur Road, Sarjapur Road, Bangalore",Bellandur,Bellandur,"Continental,Italian,North Indian,Mexican",1900,4.4,1496,Pub
+JW Kitchen - JW Marriott Bengaluru,"JW Marriott, 24/1, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Continental,Italian",2200,4.4,2111,Fine Dining
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Brigade Road,Brigade Road,"Bengali,Seafood",1200,4.4,1105,"Casual Dining, Bar"
+Barbeque Nation,"1/4, Ground Floor, Lido Mall, Swami Vivekananda Road, Ulsoor, Bangalore",Brigade Road,Brigade Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.4,1065,Casual Dining
+CafÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© Felix,"Level 5, 1 MG Mall, Swami Vivekananda Road, Trinity Circle, MG Road, Bangalore",Brigade Road,Brigade Road,"American,Cafe,Continental",1700,4.4,690,"Casual Dining, Cafe"
+Glen's Bakehouse,"24/1, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Bakery,Cafe,Italian,Desserts",600,4.4,1084,"Bakery, Cafe"
+Corner House Ice Cream,"Shop 45/3, Gopalkrishna Complex, Near Mayo Hall, Off Residency Road, Residency Road, Bangalore",Brigade Road,Brigade Road,"Ice Cream,Desserts",400,4.4,633,Dessert Parlor
+Karama Restaurant,"55, Mosque Road, Frazer Town, Bangalore",Brigade Road,Brigade Road,"Arabian,North Indian,Beverages",750,4.4,2860,Casual Dining
+Soda Bottle Opener Wala,"25/4, Opposite Harley Davidson Showroom, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Parsi,North Indian",1300,4.4,3651,"Casual Dining, Irani Cafee"
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",Brigade Road,Brigade Road,"Desserts,Beverages",450,4.4,215,Food Court
+Glen's Bakehouse,"24/1, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Bakery,Cafe,Italian,Desserts",600,4.4,1087,"Bakery, Cafe"
+Mamagoto,"949, 12th Main, Ground Floor, Off 100 Feet Road, Indiranagar, Bangalore",Brigade Road,Brigade Road,"Asian,Thai,Chinese,BBQ,Momos",1600,4.4,2560,Casual Dining
+Shiro,"2nd Floor, UB City Mall, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Japanese,Asian",3000,4.4,2229,"Fine Dining, Lounge"
+Qissa Khawani,"G 35A, Ground Floor, Brigade Gardens, Off Brigade Road, Church Street, Bangalore",Brigade Road,Brigade Road,"North Indian,Mughlai",800,4.4,319,Casual Dining
+Toscano,"2nd Floor, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Italian,Salad",1500,4.4,1840,Casual Dining
+The Bundle Co.,"Church Street, Shanthala Nagar, Ashok Nagar, MG Road, Bangalore",Brigade Road,Brigade Road,"Burger,Continental,Italian,Beverages",700,4.4,222,Quick Bites
+GMT - Gelateria Montecatini Terme,"42 Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Desserts,Ice Cream",300,4.4,69,Quick Bites
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Brigade Road,Brigade Road,"Bengali,Seafood",1200,4.4,1110,"Casual Dining, Bar"
+RockSalt,"3rd Floor, 15, Madras Bank Road/ Museum Road, Above NEXA Showroom, Bangalore",Brigade Road,Brigade Road,Modern Indian,1900,4.4,484,"Bar, Casual Dining"
+The Konkan - Seafood Restaurant,"48/1, 1st Floor, St. Marks Road, Church Street, Bangalore",Brigade Road,Brigade Road,"Seafood,Konkan,Mangalorean",850,4.4,218,Casual Dining
+Hotel Tom's Restaurant,"1/5, Muniswamy Garden, Richmond Road, Bangalore",Brigade Road,Brigade Road,"Mangalorean,Seafood,Chinese,North Indian",1000,4.4,712,Casual Dining
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",Brigade Road,Brigade Road,"Asian,Thai",1800,4.4,861,Casual Dining
+Fava,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Healthy Food,Mediterranean,Desserts,Italian,Pizza",1200,4.4,2039,"Casual Dining, Bar"
+CafÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© Felix,"Level 5, 1 MG Mall, Swami Vivekananda Road, Trinity Circle, MG Road, Bangalore",Brigade Road,Brigade Road,"American,Cafe,Continental",1700,4.4,691,"Casual Dining, Cafe"
+Art of Delight,"44/1, Residency Road, Bangalore",Brigade Road,Brigade Road,"Ice Cream,Desserts,Beverages",400,4.4,1896,Dessert Parlor
+Hae Kum Gang,"20, C/O Pauls Castle, Castle Street, Ashok Nagar",Brigade Road,Brigade Road,"Korean,Chinese,Japanese",1100,4.4,1187,Casual Dining
+ShakesBierre,"Level 5, Eva Mall, Brigade Road, Bangalore",Brigade Road,Brigade Road,"Asian,Continental,European,North Indian",1500,4.4,256,"Microbrewery, Casual Dining"
+Empire Restaurant,"35, Castle Street, Off Brigade Road, Brigade Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Mughlai,South Indian,Chinese",750,4.4,2090,Casual Dining
+The 13th Floor,"Barton Centre, 84, MG Road, Bangalore",Brigade Road,Brigade Road,"Asian,North Indian,Thai",1700,4.4,4575,Lounge
+KazÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©,"909 SKAV, 21st floor, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Asian,Japanese,Thai",3000,4.4,858,Fine Dining
+JW Kitchen - JW Marriott Bengaluru,"JW Marriott, 24/1, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Continental,Italian",2200,4.4,2115,Fine Dining
+Farzi Cafe,"202, Level 2, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,Modern Indian,1500,4.4,2392,"Casual Dining, Microbrewery"
+Toscano,"2nd Floor, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"Italian,Salad",1500,4.4,1867,Casual Dining
+Sotally Tober,"65, Residency Road, Bangalore",Brigade Road,Brigade Road,"Asian,Burger,Chinese,Finger Food",1200,4.4,282,"Bar, Casual Dining"
+CafÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© Felix,"Level 5, 1 MG Mall, Swami Vivekananda Road, Trinity Circle, MG Road, Bangalore",Brigade Road,Brigade Road,"American,Cafe,Continental",1700,4.4,737,"Casual Dining, Cafe"
+Barbeque Nation,"1/4, Ground Floor, Lido Mall, Swami Vivekananda Road, Ulsoor, Bangalore",Brigade Road,Brigade Road,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.4,1094,Casual Dining
+Tree Tops Bar & Kitchen,"Hotel Southern Star, 40/2, Roof Top, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Chinese,Continental,Italian",1000,4.4,189,"Casual Dining, Bar"
+Matteo Coffea,"2, Church Street, Bangalore",Brigade Road,Brigade Road,Cafe,600,4.4,2662,Cafe
+Salvadores,"5th Floor, Bangalore Central Mall, MG Road, Bangalore",Brigade Road,Brigade Road,"Mediterranean,Continental,French,Italian",2000,4.4,186,Fine Dining
+The Lantern Restaurant & Bar - The Ritz-Carlton...,"The Ritz-Carlton, 99, Residency Road, Bangalore",Brigade Road,Brigade Road,Chinese,3500,4.4,424,"Fine Dining, Bar"
+Matsuri - The Chancery Hotel,"The Chancery Hotel, Lavelle Road, Bangalore",Brigade Road,Brigade Road,Japanese,1800,4.4,183,"Casual Dining, Bar"
+Tree Tops Bar & Kitchen,"Hotel Southern Star, 40/2, Roof Top, Lavelle Road, Bangalore",Brigade Road,Brigade Road,"North Indian,Chinese,Continental,Italian",1000,4.4,108,"Casual Dining, Bar"
+BITEBOX,"107/2A, Padma Building, Vivekananda Layout, Munnekolala, Marathahalli, Bangalore",Brookefield,Brookefield,"North Indian,Chinese,Fast Food,Beverages,Desserts",300,4.4,150,Quick Bites
+Yo! Chow,"90/3 Sri Sapthagiri Complex,Outer ring road marathahalli,Opp to innovative Multiplex, Marathahalli, Bangalore",Brookefield,Brookefield,"Chinese,Momos",800,4.4,1777,Casual Dining
+Le Gateau - The Cake Shop,"33/4, Narayanamma Garden, 8th Cross, Konen Agrahara, Murugeshpalya, Old Airport Road, Bangalore",Brookefield,Brookefield,"Desserts,Bakery",600,4.4,536,Delivery
+eat.fit,"32/2G, NCPR Industrial Layout, Doddanakundi Industrial Area 2, Seetharampalya, Hoodi, Whitefield, Bangalore",Brookefield,Brookefield,"Healthy Food,North Indian,Biryani,Continental,Sandwich",500,4.4,1034,Delivery
+Foxtrot,"89/1, Monnekollal Village, Varthur Hobli, Outer Ring Road, Marathahalli, Bangalore",Brookefield,Brookefield,"North Indian,Chinese,Continental,Momos",1200,4.4,1151,"Pub, Casual Dining"
+Dhaba Estd 1986 Delhi,"1st Floor, NTR Royal Plaza, Outer Ring Road, Marathahalli, Bangalore",Brookefield,Brookefield,North Indian,1100,4.4,1216,"Casual Dining, Bar"
+Rolls & Bowls,"279, Shop 3, 8th Main Road, BEML Layout, 6th Stage, Brookefield, Bangalore",Brookefield,Brookefield,"Rolls,Chinese",250,4.4,143,Quick Bites
+Gilly's Restobar,"43, 1st Floor, Kundanahalli Gate, ITPL Main Road, Brookefield, Bangalore",Brookefield,Brookefield,"Continental,Finger Food,North Indian,Chinese",1200,4.4,1700,"Pub, Casual Dining"
+Gilly's Restobar,"43, 1st Floor, Kundanahalli Gate, ITPL Main Road, Brookefield, Bangalore",Brookefield,Brookefield,"Continental,Finger Food,North Indian,Chinese",1200,4.4,1710,"Pub, Casual Dining"
+The Globe Grub,"C K Emerald, Opposite Yes Bank, BTM Layout, Bannerghata Main Road, BTM, Bangalore",BTM,BTM,"Continental,North Indian,Asian,Italian",1300,4.4,201,Casual Dining
+"3B's - Buddies, Bar & Barbecues","5th Floor, CPR Tower, 100 Feet Ring Road, 1st Phase, 2nd Stage, BTM, Bangalore",BTM,BTM,"North Indian,Mediterranean,European,BBQ",1100,4.4,1149,"Casual Dining, Bar"
+XOOX Brewmill,"8, Koramanagala Industrial Layout, Near HDFC Bank, Koramangala 5th Block, Bangalore",BTM,BTM,"Modern Indian,European,Asian",2000,4.4,1533,"Microbrewery, Casual Dining"
+Deja Vu Resto Bar,"5th Floor, Gopalan Innovation Mall, Bannerghatta Road, Bangalore",BTM,BTM,"North Indian,Italian",900,4.4,2493,Pub
+Punjab Bistro,"1, SJR Primus, Adjacent Raheja Arcade, Koramangala 7th Block, Bangalore",BTM,BTM,North Indian,1500,4.4,455,"Casual Dining, Bar"
+Salt - Indian Restaurant Bar & Grill,"2nd Floor, Forum Mall, Koramangala 7th Block, Bangalore",BTM,BTM,"North Indian,Mughlai,Biryani",1500,4.4,677,Casual Dining
+Sixth Avenue Cafe And Patisserie,"44, 4th B Cross Rd, Koramangala Industrial Layout, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,Italian,Desserts",600,4.4,159,"Cafe, Dessert Parlor"
+A Hole Lotta Love Cafe,"59, 1st Floor, Diagonally Opposite JNC, Industrial Layout, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,American,Burger,Sandwich,Beverages",600,4.4,2859,Cafe
+Nuts Over Salads Cafe,"1, Nirmala Mansion, 4th Cross, 17th A Main, 60 Feet Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,Salad",800,4.4,197,Cafe
+YORK St.,"122B, 1st A Cross Road, near to McDonald?s,2 nd floor KHB colony, Koramangala 5th Block, Bangalore",BTM,BTM,"Cafe,European,Continental",900,4.4,939,Cafe
+Enerjuvate Studio & Cafe,"82, 7th Main, 4th B Block, Near BDA Complex, Koramangala 4th Block, Bangalore",BTM,BTM,"Cafe,Continental,Healthy Food,Sandwich,Pizza",800,4.4,464,Cafe
+Onesta,"Site 15, 15th Cross, 100 Feet Road, 4th Phase, JP Nagar, Bangalore",BTM,BTM,"Pizza,Cafe,Italian",600,4.4,4386,"Casual Dining, Cafe"
+Mumbai Tiffin,"248, 19th Main, 15th Cross, Near Nilgiris Super Store, Sector 4, HSR Layout, Bangalore, HSR, Bangalore",BTM,BTM,North Indian,400,4.4,1286,Quick Bites
+Zee5 Loft,"436, 18th Main, 80 Feet Road, Koramangala 6th Block, Bangalore",BTM,BTM,"Cafe,North Indian,Pizza,Sandwich,Salad",500,4.4,351,Cafe
+Aligarh House,Delivery Only,BTM,BTM,"North Indian,Biryani,Awadhi,Mughlai",400,4.4,98,Delivery
+Meghana Foods,"124, Near Jyothi Nivas College, 1st Cross, KHB Colony, Koramangala 5th Block, Bangalore",BTM,BTM,"Biryani,Seafood,Andhra,North Indian",600,4.4,7210,Casual Dining
+Drunken Monkey,"54/55, 3rd Cross, Omkar Nagar, Arekere Gate, Bannerghatta Road, Bangalore",BTM,BTM,"Beverages,Fast Food",400,4.4,290,"Beverage Shop, Quick Bites"
+Onesta,"562, 8th Main, Koramangala 4th Block, Bangalore",BTM,BTM,"Pizza,Cafe,Italian",600,4.4,9041,"Casual Dining, Cafe"
+Hanoi - Vietnamese Cuisine,"7, 80 Feet Road, Koramangala 4th Block, Bangalore",BTM,BTM,Vietnamese,1000,4.4,1796,Casual Dining
+Brewsky,"55, 5th Floor, Goenka Chambers, 19th Main Road, Jeewan Griha Colony, Phase 2, JP Nagar, Bangalore",BTM,BTM,"Continental,American",1600,4.4,4315,Microbrewery
+Nasi And Mee,"974, 80 Feet Road, Koramangala 4th Block, Bangalore",BTM,BTM,"Malaysian,Thai,Singaporean,Asian,Chinese",1000,4.4,2386,Casual Dining
+Chavadi,"4, Arama Suites, Sarvabhouma Nagar, Off Bannerghatta Road, Bannerghatta Road, Bangalore",BTM,BTM,"Continental,North Indian,Pizza,Italian",1200,4.4,2239,"Casual Dining, Bar"
+China Pearl,"53/1, 5th Cross, Koramangala 6th Block, Bangalore",BTM,BTM,Chinese,1100,4.4,1851,Casual Dining
+Brooks and Bonds Brewery,"4, 100 Feet Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Continental,Mediterranean,North Indian,Chinese,Finger Food",1600,4.4,3870,"Casual Dining, Microbrewery"
+Gods Own Cafe,"72, 1st Main, 4th Cross Road, Near HDFC Bank, Koramangala 7th Block, Bangalore",BTM,BTM,"South Indian,Kerala,Seafood",300,4.4,384,Quick Bites
+Tim Tai,"130, 1st Cross, Koramangala 5th Block, Bangalore",BTM,BTM,"Chinese,Thai,Asian,Malaysian,Vietnamese",1400,4.4,3667,Casual Dining
+Mimansa @ Foxtrot,"17, SBI Colony Service Road, Koramangala 3rd Block, Bangalore",BTM,BTM,Cafe,1000,4.4,191,Cafe
+Fava Bistro,"8, Jailaxmi Nivas, Koramangala 5th Block, Bangalore",BTM,BTM,"Mediterranean,Pizza,Italian,Beverages",1500,4.4,383,"Casual Dining, Bar"
+Drunkling - Sizzlers and Pub,"145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore",BTM,BTM,"Chinese,Continental,North Indian,Burger,Pizza",1000,4.4,345,"Casual Dining, Bar"
+Bubblewrap Waffle Co.,"663, 11th Main, 34th Cross, 4th Block, Jayanagar, Bangalore",BTM,BTM,"Desserts,Beverages",400,4.4,358,Dessert Parlor
+The Biryani Story,"746, 7th Cross, 13th Main, BTM, Bangalore",BTM,BTM,"Biryani,North Indian,Chinese,Mughlai",600,4.4,76,Casual Dining
+TRIGEREATO,"584, 80 Feet Road, 5th Floor, Koramangala 8th Block, Bangalore",BTM,BTM,"Cafe,Continental,Beverages",700,4.4,100,Cafe
+The Himalayan,"8/1, 1st Floor, Jailaxmi Nivas, 1st Cross, Koramangala 5th Block, Bangalore",BTM,BTM,Korean,1200,4.4,320,Casual Dining
+Choco Cheese,"20/21, 20th Main Road, 1st Cross, Maruti Nagar Main Road, BTM, Bangalore",BTM,BTM,"Desserts,Beverages",300,4.4,63,Dessert Parlor
+Black Deer,"18th Main Park, 17th H Main Road, Koramangala 5th Block, Bangalore",BTM,BTM,"Beverages,Ice Cream,Desserts",,4.4,149,"Takeaway, Delivery"
+Drava,"104, 3rd Floor, 1st Main, 5th Block, Jatti Building, Koramangala 5th Block, Bangalore",BTM,BTM,"Pizza,Continental,North Indian,Asian",1500,4.4,110,Lounge
+Myu Bar at Gilly's Redefined,"413, 100 Feet Road, Koramangala 4th Block, Bangalore",BTM,BTM,"American,North Indian,Pizza,Finger Food,Continental",1200,4.4,1213,"Microbrewery, Bar"
+Shanmukha,"1313, Near Bangalore Central Mall, 25th Main, 9th Block, Jayanagar, Bangalore",BTM,BTM,"Biryani,Andhra,North Indian,Chinese",800,4.4,1944,Casual Dining
+"3B's - Buddies, Bar & Barbecues","5th Floor, CPR Tower, 100 Feet Ring Road, 1st Phase, 2nd Stage, BTM, Bangalore",BTM,BTM,"North Indian,Mediterranean,European,BBQ",1100,4.4,1154,"Casual Dining, Bar"
+Punjab Bistro,"1, SJR Primus, Adjacent Raheja Arcade, Koramangala 7th Block, Bangalore",BTM,BTM,North Indian,1500,4.4,454,"Casual Dining, Bar"
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Church Street,Church Street,"Bengali,Seafood",1200,4.4,1112,"Casual Dining, Bar"
+JW Kitchen - JW Marriott Bengaluru,"JW Marriott, 24/1, Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"North Indian,Continental,Italian",2200,4.4,2119,Fine Dining
+Barbeque Nation,"1/4, Ground Floor, Lido Mall, Swami Vivekananda Road, Ulsoor, Bangalore",Church Street,Church Street,"North Indian,European,Mediterranean,BBQ,Kebab",1600,4.4,1065,Casual Dining
+Matteo Coffea,"2, Church Street, Bangalore",Church Street,Church Street,Cafe,600,4.4,2638,Cafe
+CafÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ© Felix,"Level 5, 1 MG Mall, Swami Vivekananda Road, Trinity Circle, MG Road, Bangalore",Church Street,Church Street,"American,Cafe,Continental",1700,4.4,693,"Casual Dining, Cafe"
+Glen's Bakehouse,"24/1, Lavelle Road, Bangalore",Church Street,Church Street,"Bakery,Cafe,Italian,Desserts",600,4.4,1093,"Bakery, Cafe"
+Karama Restaurant,"55, Mosque Road, Frazer Town, Bangalore",Church Street,Church Street,"Arabian,North Indian,Beverages",750,4.4,2866,Casual Dining
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",Church Street,Church Street,"Desserts,Beverages",450,4.4,216,Food Court
+The Bundle Co.,"Church Street, Shanthala Nagar, Ashok Nagar, MG Road, Bangalore",Church Street,Church Street,"Burger,Continental,Italian,Beverages",700,4.4,223,Quick Bites
+Corner House Ice Cream,"Shop 45/3, Gopalkrishna Complex, Near Mayo Hall, Off Residency Road, Residency Road, Bangalore",Church Street,Church Street,"Ice Cream,Desserts",400,4.4,635,Dessert Parlor
+Soda Bottle Opener Wala,"25/4, Opposite Harley Davidson Showroom, Lavelle Road, Bangalore",Church Street,Church Street,"Parsi,North Indian",1300,4.4,3656,"Casual Dining, Irani Cafee"
+Le Gateau - The Cake Shop,"33/4, Narayanamma Garden, 8th Cross, Konen Agrahara, Murugeshpalya, Old Airport Road, Bangalore",Church Street,Church Street,"Desserts,Bakery",600,4.4,536,Delivery
+Toscano,"2nd Floor, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"Italian,Salad",1500,4.4,1842,Casual Dining
+Maravanthe,"322/1, 1st Floor, CMH Road, Indiranagar, Bangalore",Church Street,Church Street,"Seafood,Mangalorean",1000,4.4,686,Casual Dining
+Hotel Tom's Restaurant,"1/5, Muniswamy Garden, Richmond Road, Bangalore",Church Street,Church Street,"Mangalorean,Seafood,Chinese,North Indian",1000,4.4,714,Casual Dining
+Fava,"203, 2nd Floor, UB City, 24 Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"Healthy Food,Mediterranean,Desserts,Italian,Pizza",1200,4.4,2041,"Casual Dining, Bar"
+Millers 46,"46, Millers Road, Vasanth Nagar, Bangalore",Church Street,Church Street,"American,Continental,Steak",1100,4.4,2266,Casual Dining
+Art of Delight,"44/1, Residency Road, Bangalore",Church Street,Church Street,"Ice Cream,Desserts,Beverages",400,4.4,1899,Dessert Parlor
+The Konkan - Seafood Restaurant,"48/1, 1st Floor, St. Marks Road, Church Street, Bangalore",Church Street,Church Street,"Seafood,Konkan,Mangalorean",850,4.4,218,Casual Dining
+Qissa Khawani,"G 35A, Ground Floor, Brigade Gardens, Off Brigade Road, Church Street, Bangalore",Church Street,Church Street,"North Indian,Mughlai",800,4.4,319,Casual Dining
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",Church Street,Church Street,"Asian,Thai",1800,4.4,864,Casual Dining
+RockSalt,"3rd Floor, 15, Madras Bank Road/ Museum Road, Above NEXA Showroom, Bangalore",Church Street,Church Street,Modern Indian,1900,4.4,488,"Bar, Casual Dining"
+GMT - Gelateria Montecatini Terme,"42 Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"Desserts,Ice Cream",300,4.4,68,Quick Bites
+The 13th Floor,"Barton Centre, 84, MG Road, Bangalore",Church Street,Church Street,"Asian,North Indian,Thai",1700,4.4,4582,Lounge
+KazÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©,"909 SKAV, 21st floor, Lavelle Road, Bangalore",Church Street,Church Street,"Asian,Japanese,Thai",3000,4.4,864,Fine Dining
+Shiro,"2nd Floor, UB City Mall, Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,"Japanese,Asian",3000,4.4,2229,"Fine Dining, Lounge"
+ShakesBierre,"Level 5, Eva Mall, Brigade Road, Bangalore",Church Street,Church Street,"Asian,Continental,European,North Indian",1500,4.4,264,"Microbrewery, Casual Dining"
+Farzi Cafe,"202, Level 2, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,Modern Indian,1500,4.4,2395,"Casual Dining, Microbrewery"
+Sotally Tober,"65, Residency Road, Bangalore",Church Street,Church Street,"Asian,Burger,Chinese,Finger Food",1200,4.4,194,"Bar, Casual Dining"
+Hae Kum Gang,"20, C/O Pauls Castle, Castle Street, Ashok Nagar",Church Street,Church Street,"Korean,Chinese,Japanese",1100,4.4,1190,Casual Dining
+Tree Tops Bar & Kitchen,"Hotel Southern Star, 40/2, Roof Top, Lavelle Road, Bangalore",Church Street,Church Street,"North Indian,Chinese,Continental,Italian",1000,4.4,113,"Casual Dining, Bar"
+Alba - JW Marriott Bengaluru,"JW Marriott, 24/1, Vittal Mallya Road, Lavelle Road, Bangalore",Church Street,Church Street,Italian,4000,4.4,561,Fine Dining
+Salvadores,"5th Floor, Bangalore Central Mall, MG Road, Bangalore",Church Street,Church Street,"Mediterranean,Continental,French,Italian",2000,4.4,190,Fine Dining
+Chianti,"No.18, Ramanashree Arcade, Ground Floor, Ashok Nagar Post, MG Road, Bangalore",Church Street,Church Street,Italian,1500,4.4,280,Casual Dining
+The Lantern Restaurant & Bar - The Ritz-Carlton...,"The Ritz-Carlton, 99, Residency Road, Bangalore",Church Street,Church Street,Chinese,3500,4.4,424,"Fine Dining, Bar"
+Matsuri - The Chancery Hotel,"The Chancery Hotel, Lavelle Road, Bangalore",Church Street,Church Street,Japanese,1800,4.4,183,"Casual Dining, Bar"
+Blue Ginger - The Taj West End,"Taj West End, Race Course Road, Bangalore",Church Street,Church Street,Vietnamese,3200,4.4,514,Fine Dining
+Masala Klub - The Taj West End,"Taj West End, Race Course Road, Bangalore",Church Street,Church Street,"North Indian,South Indian",4000,4.4,309,Fine Dining
+Fire Station,"#154, Neeladri Main Road, Electronic City Phase 1, Above Unlimited Store, Doddathoguru, Electronic City, Bangalore",Electronic City,Electronic City,"Continental,Mexican,Burger,Desserts,Italian",1200,4.4,808,"Pub, Casual Dining"
+Fire Station,"#154, Neeladri Main Road, Electronic City Phase 1, Above Unlimited Store, Doddathoguru, Electronic City, Bangalore",Electronic City,Electronic City,"Continental,Mexican,Burger,Desserts,Italian",1200,4.4,809,"Pub, Casual Dining"
+Al Amanah Cafe,"20, 5th Avenue, 5th Main Road, Kammanahalli, Bangalore",Frazer Town,Frazer Town,"Middle Eastern,Fast Food,Rolls",300,4.4,1413,Quick Bites
+Maravanthe,"322/1, 1st Floor, CMH Road, Indiranagar, Bangalore",Frazer Town,Frazer Town,"Seafood,Mangalorean",1000,4.4,691,Casual Dining
+Corner House Ice Cream,"Shop 45/3, Gopalkrishna Complex, Near Mayo Hall, Off Residency Road, Residency Road, Bangalore",Frazer Town,Frazer Town,"Ice Cream,Desserts",400,4.4,635,Dessert Parlor
+Karama Restaurant,"55, Mosque Road, Frazer Town, Bangalore",Frazer Town,Frazer Town,"Arabian,North Indian,Beverages",750,4.4,2867,Casual Dining
+Soda Bottle Opener Wala,"25/4, Opposite Harley Davidson Showroom, Lavelle Road, Bangalore",Frazer Town,Frazer Town,"Parsi,North Indian",1300,4.4,3657,"Casual Dining, Irani Cafee"
+Oh! Calcutta,"14, 2nd Floor, Church Street, Bangalore",Frazer Town,Frazer Town,"Bengali,Seafood",1200,4.4,1112,"Casual Dining, Bar"
+XO Belgian Waffle,"Kiosk 5, Third Floor, Food Court, Garuda Mall, Magrath Road, Ashok Nagar, Brigade Road, Bangalore",Frazer Town,Frazer Town,"Desserts,Beverages",450,4.4,216,Food Court
+Shiro,"2nd Floor, UB City Mall, Vittal Mallya Road, Lavelle Road, Bangalore",Frazer Town,Frazer Town,"Japanese,Asian",3000,4.4,2230,"Fine Dining, Lounge"
+RockSalt,"3rd Floor, 15, Madras Bank Road/ Museum Road, Above NEXA Showroom, Bangalore",Frazer Town,Frazer Town,Modern Indian,1900,4.4,487,"Bar, Casual Dining"
+Toscano,"2nd Floor, UB City, Vittal Mallya Road, Lavelle Road, Bangalore",Frazer Town,Frazer Town,"Italian,Salad",1500,4.4,1842,Casual Dining
+ASEAN - On The Edge,"84, 13th Floor, Barton Center, MG Road, Bangalore",Frazer Town,Frazer Town,"Asian,Thai",1800,4.4,864,Casual Dining
+Qissa Khawani,"G 35A, Ground Floor, Brigade Gardens, Off Brigade Road, Church Street, Bangalore",Frazer Town,Frazer Town,"North Indian,Mughlai",800,4.4,319,Casual Dining
+The Bundle Co.,"Church Street, Shanthala Nagar, Ashok Nagar, MG Road, Bangalore",Frazer Town,Frazer Town,"Burger,Continental,Italian,Beverages",700,4.4,223,Quick Bites
+GMT - Gelateria Montecatini Terme,"42 Vittal Mallya Road, Lavelle Road, Bangalore",Frazer Town,Frazer Town,"Desserts,Ice Cream",300,4.4,68,Quick Bites
+The Konkan - Seafood Restaurant,"48/1, 1st Floor, St. Marks Road, Church Street, Bangalore",Frazer Town,Frazer Town,"Seafood,Konkan,Mangalorean",850,4.4,218,Casual Dining
+Millers 46,"46, Millers Road, Vasanth Nagar, Bangalore",Frazer Town,Frazer Town,"American,Continental,Steak",1100,4.4,2266,Casual Dining
+The Fisherman's Wharf,"26, Opposite Shubh Enclave, Ambalipura Village, Sarjapur Road, Bangalore",HSR,HSR,"Seafood,Goan,North Indian,Continental,Asian",1400,4.4,4108,"Casual Dining, Bar"
+Onesta,"2318, 27th Main Road, 1st Sector, HSR, Bangalore",HSR,HSR,"Pizza,Cafe,Italian",600,4.4,3764,"Casual Dining, Cafe"
+Foxtrot - House of Subculture,"17, SBI Colony Service Road, Koramangala 3rd Block, Bangalore",HSR,HSR,"Cafe,American,Asian,North Indian",1000,4.4,366,"Cafe, Lounge"
+Zee5 Loft,"Ground Floor, Shree Arcade, 17th Cross Road, 19th Main Road, Sector 4, HSR, Bangalore",HSR,HSR,"Cafe,Burger,Pizza,Sandwich",700,4.4,788,Cafe
+Mimansa @ Foxtrot,"17, SBI Colony Service Road, Koramangala 3rd Block, Bangalore",HSR,HSR,Cafe,1000,4.4,190,Cafe
+Aligarh House,"270, 2nd Floor, Krishna Reddy Building, Somasundrapalya, Sector 2, HSR, Bangalore",HSR,HSR,"North Indian,Biryani,Awadhi,Mughlai",400,4.4,568,Delivery
+La Casa Brewery And Kitchen,"15, Amrita Engineering College Road, Kasavanahalli, Sarjapur Road, Bangalore",HSR,HSR,"Finger Food,Continental,Seafood",1500,4.4,1401,"Microbrewery, Casual Dining"
+Nasi And Mee,"974, 80 Feet Road, Koramangala 4th Block, Bangalore",HSR,HSR,"Malaysian,Thai,Singaporean,Asian,Chinese",1000,4.4,2389,Casual Dining
+nu.tree,"36 Aarush, Sri Balaji Layout, Ambulipura, Sarjapur Road, Bangalore",HSR,HSR,"North Indian,Healthy Food,Beverages",400,4.4,280,Delivery
+Kanua,"6/2, Near Wipro Headquaters, Kaikondrahalli, Sarjapur Road, Bangalore",HSR,HSR,"Konkan,Mangalorean,Seafood",1400,4.4,893,Casual Dining
+Tipsy Bull - The Bar Exchange,"24-26, 414/80/2, Varthur Hobli, Outer Ring Road",HSR,HSR,"North Indian,Chinese,Continental,Mexican",1400,4.4,2206,"Bar, Casual Dining"
+Mumbai Tiffin,"248, 19th Main, 15th Cross, Near Nilgiris Super Store, Sector 4, HSR Layout, Bangalore, HSR, Bangalore",HSR,HSR,North Indian,400,4.4,1288,Quick Bites
+Zee5 Loft,"Ground Floor, Shree Arcade, 17th Cross Road, 19th Main Road, Sector 4, HSR, Bangalore",HSR,HSR,"Cafe,Burger,Pizza,Sandwich",700,4.4,792,Cafe
