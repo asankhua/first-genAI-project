@@ -259,22 +259,32 @@ st.markdown(STYLES, unsafe_allow_html=True)
 _inject_secrets_to_env()
 
 # --- Load locations & cuisines ---
-@st.cache_data(ttl=120)
+@st.cache_data(ttl=10)  # Reduced cache time to 10 seconds for testing
 def load_options():
     """Fetch from API when available; otherwise use bundled data for standalone/Streamlit Cloud."""
     locs, cuis = [], []
+    data_source = "unknown"
     try:
         locs = fetch_locations()
         cuis = fetch_cuisines()
-    except Exception:
+        if locs:
+            data_source = "api"
+    except Exception as e:
+        # API failed, use bundled data
         rows = _load_standalone_data()
         if rows:
             locs = _get_locations_from_data(rows)
             cuis = _get_cuisines_from_data(rows)
+            data_source = "bundled_csv"
     if not locs:
         locs = FALLBACK_LOCALITIES
+        data_source = "fallback"
     if not cuis:
         cuis = FALLBACK_CUISINES
+    # Store debug info in session state
+    st.session_state["_data_source"] = data_source
+    st.session_state["_locations_count"] = len(locs)
+    st.session_state["_cuisines_count"] = len(cuis)
     return locs, cuis
 
 
@@ -301,6 +311,10 @@ st.markdown(f"""
   <span class="stat-item">👨‍🍳 <strong>{len(cuisines)}</strong> Cuisines</span>
 </div>
 """, unsafe_allow_html=True)
+
+# Debug info (remove in production)
+if st.session_state.get("_data_source"):
+    st.caption(f"Debug: Data source = {st.session_state['_data_source']} | Locations: {st.session_state.get('_locations_count', 0)} | Cuisines: {st.session_state.get('_cuisines_count', 0)}")
 
 # --- Form (same layout as Phase 5) ---
 st.markdown('<div class="form-section">', unsafe_allow_html=True)
