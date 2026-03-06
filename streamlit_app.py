@@ -397,15 +397,7 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# Debug info (remove in production)
-if st.session_state.get("_data_source"):
-    source_type = st.session_state.get('_data_source_type', 'unknown')
-    csv_rows = st.session_state.get('_csv_rows', 0)
-    st.caption(f"Debug: {st.session_state['_data_source']} | Source: {source_type} | CSV rows: {csv_rows} | Locations: {st.session_state.get('_locations_count', 0)} | Cuisines: {st.session_state.get('_cuisines_count', 0)}")
-    if st.session_state.get("_data_gen_status"):
-        st.caption(f"Status: {st.session_state['_data_gen_status']}")
-    if st.session_state.get("_data_gen_error"):
-        st.error(f"Data generation error: {st.session_state['_data_gen_error']}")
+
 
 # --- Form (same layout as Phase 5) ---
 st.markdown('<div class="form-section">', unsafe_allow_html=True)
