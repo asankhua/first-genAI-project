@@ -150,9 +150,20 @@ def _generate_data_from_hf() -> List[Dict[str, Any]]:
         return []
 
 
+@st.cache_data(ttl=3600)  # Cache data generation for 1 hour
+def _generate_data_cached() -> List[Dict[str, Any]]:
+    """Cached wrapper for HF data generation."""
+    return _generate_data_from_hf()
+
+
 def _load_standalone_data(force_reload: bool = False) -> List[Dict[str, Any]]:
     """Load cleaned data from bundled CSV or generate from HF for Streamlit Cloud mode."""
     global _CLEANED_ROWS
+    
+    # Check session state cache first (persists across reruns)
+    if not force_reload and st.session_state.get("_cleaned_rows_cache"):
+        return st.session_state["_cleaned_rows_cache"]
+    
     if _CLEANED_ROWS and not force_reload:
         return _CLEANED_ROWS
     
@@ -168,15 +179,17 @@ def _load_standalone_data(force_reload: bool = False) -> List[Dict[str, Any]]:
         except Exception as e:
             st.session_state["_load_error"] = str(e)
     
-    # If CSV has too few rows, generate from HF
+    # If CSV has too few rows, generate from HF (with caching)
     if len(rows_loaded) < 1000:
         st.session_state["_csv_too_small"] = len(rows_loaded)
-        rows_loaded = _generate_data_from_hf()
+        rows_loaded = _generate_data_cached()
         st.session_state["_data_source_type"] = "hf_generated"
     else:
         st.session_state["_data_source_type"] = "csv_file"
     
     _CLEANED_ROWS = rows_loaded
+    # Also store in session state for persistence across reruns
+    st.session_state["_cleaned_rows_cache"] = rows_loaded
     return _CLEANED_ROWS
 
 
@@ -342,7 +355,7 @@ st.markdown(STYLES, unsafe_allow_html=True)
 _inject_secrets_to_env()
 
 # --- Load locations & cuisines ---
-@st.cache_data(ttl=10)  # Reduced cache time to 10 seconds for testing
+@st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_options():
     """Fetch from API when available; otherwise use bundled data for standalone/Streamlit Cloud."""
     locs, cuis = [], []
@@ -354,8 +367,8 @@ def load_options():
         if locs:
             data_source = "api"
     except Exception as e:
-        # API failed, use bundled data
-        rows = _load_standalone_data(force_reload=True)
+        # API failed, use bundled data (don't force reload, use cached data)
+        rows = _load_standalone_data(force_reload=False)
         rows_count = len(rows)
         if rows:
             locs = _get_locations_from_data(rows)
