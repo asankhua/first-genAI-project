@@ -200,95 +200,49 @@ def fetch_recommendations(
 # --- CSS (matches phase5/src/index.css) ---
 STYLES = """
 <style>
-/* Zomato AI Recommender - Match Phase 5 exactly */
-:root {
-  --bg-primary: #f5f5f5;
-  --bg-secondary: #ffffff;
-  --bg-gradient-start: #f5f5f5;
-  --bg-gradient-mid: #fafafa;
-  --bg-gradient-end: #f0f0f0;
-  --text-primary: #1a1a1a;
-  --text-secondary: #444;
-  --text-muted: #6c757d;
-  --border-color: #e0e0e0;
-  --card-bg: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
-  --card-border: #e9ecef;
-  --why-bg: #f1f3f5;
-  --accent-red: #ff4757;
-  --button-bg: #e23744;
-  --button-hover: #c41e2a;
-}
-
-[data-theme="dark"] {
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --bg-gradient-start: #1a1a1a;
-  --bg-gradient-mid: #252525;
-  --bg-gradient-end: #1f1f1f;
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --text-muted: #a0a0a0;
-  --border-color: #404040;
-  --card-bg: linear-gradient(135deg, #2d2d2d 0%, #363636 50%, #2a2a2a 100%);
-  --card-border: #404040;
-  --why-bg: #363636;
-  --accent-red: #ff6b6b;
-  --button-bg: #e23744;
-  --button-hover: #ff4757;
-}
-
+/* Zomato AI Recommender - Light Theme */
 .stApp { max-width: 1200px; margin: 0 auto; }
-div[data-testid="stAppViewContainer"] { background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-mid) 50%, var(--bg-gradient-end) 100%); color: var(--text-primary); }
+div[data-testid="stAppViewContainer"] { background: linear-gradient(180deg, #f5f5f5 0%, #fafafa 50%, #f0f0f0 100%); }
 
 .main-header { text-align: center; margin-bottom: 2rem; }
-.app-title { font-size: 2.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.02em; }
-.title-accent { color: var(--accent-red); }
-.app-subtitle { font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 400; }
-.app-stats { display: flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 1rem; color: var(--text-secondary); }
-.stat-item strong { color: var(--accent-red); }
+.app-title { font-size: 2.5rem; font-weight: 800; color: #1a1a1a; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+.title-accent { color: #ff4757; }
+.app-subtitle { font-size: 1.05rem; color: #444; margin-bottom: 1.25rem; font-weight: 400; }
+.app-stats { display: flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 1rem; color: #444; }
+.stat-item strong { color: #ff4757; }
 .stat-sep { color: #999; font-weight: 300; margin: 0 0.25rem; }
 
 .form-section { margin-bottom: 2rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
 
-.results-section { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.results-section { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
 .loading-state { display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 2rem; }
 .loading-state p { color: #555; font-size: 0.95rem; }
 .empty-state { text-align: center; padding: 2rem 1rem; }
-.empty-msg { color: var(--text-secondary); font-size: 0.95rem; }
-.empty-hint { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.75rem; }
+.empty-msg { color: #555; font-size: 0.95rem; }
+.empty-hint { color: #666; font-size: 0.9rem; margin-top: 0.75rem; }
 .error-section { border-color: #ff4757; }
 .error-msg { color: #ff6b6b; }
 
-.results-summary { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem 1.5rem; color: var(--text-primary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem; }
+.results-summary { background: #f8f9fa; border: 1px solid #e8e8e8; border-radius: 12px; padding: 1.25rem 1.5rem; color: #333; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem; }
 .rec-tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 @media (max-width: 640px) { .rec-tiles { grid-template-columns: 1fr; } }
-/* Themed tile */
-.rec-tile { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.rec-tile { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%); border: 1px solid #e9ecef; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 .rec-tile-header { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
-.rec-tile-name { font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin: 0; flex: 1; }
+.rec-tile-name { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin: 0; flex: 1; }
 .rec-tile-rating { background: #5cb85c; color: #fff; font-size: 0.9rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 20px; flex-shrink: 0; }
 .rec-tile-details { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
-.rec-tile-row { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5; }
-.rec-tile-why { background: var(--why-bg); border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-top: 0; }
-.rec-tile-why-title { font-weight: 700; color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.5rem; }
-.rec-tile-why-text { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; font-style: italic; margin: 0; }
+.rec-tile-row { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.95rem; color: #495057; line-height: 1.5; }
+.rec-tile-why { background: #f1f3f5; border-left: 4px solid #FF4C4C; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-top: 0; }
+.rec-tile-why-title { font-weight: 700; color: #1a1a1a; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.rec-tile-why-text { color: #495057; font-size: 0.9rem; line-height: 1.6; font-style: italic; margin: 0; }
 
-.app-footer { text-align: center; padding: 2.5rem 1rem; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
-.app-footer-brand { font-weight: 600; color: var(--text-primary); letter-spacing: 0.05em; }
+.app-footer { text-align: center; padding: 2.5rem 1rem; font-size: 0.85rem; color: #6c757d; line-height: 1.6; }
+.app-footer-brand { font-weight: 600; color: #1a1a1a; letter-spacing: 0.05em; }
 
-/* Theme toggle button */
-.theme-toggle { position: fixed; top: 1rem; right: 1rem; z-index: 1000; }
-.theme-toggle button { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 1.2rem; transition: all 0.3s ease; }
-.theme-toggle button:hover { background: var(--accent-red); color: white; }
-
-.stButton > button { width: 100%; background: var(--button-bg) !important; background-color: var(--button-bg) !important; color: white !important; font-weight: 600; padding: 1rem 1.5rem; border-radius: 10px; border: none; }
-.stButton > button:hover { background: var(--button-hover) !important; background-color: var(--button-hover) !important; box-shadow: 0 4px 20px rgba(226, 55, 68, 0.5); color: white !important; }
-
-/* Streamlit widgets theming */
-[data-theme="dark"] .stSelectbox label { color: var(--text-primary) !important; }
-[data-theme="dark"] .stMarkdown { color: var(--text-primary) !important; }
+.stButton > button { width: 100%; background: #e23744 !important; background-color: #e23744 !important; color: white !important; font-weight: 600; padding: 1rem 1.5rem; border-radius: 10px; border: none; }
+.stButton > button:hover { background: #c41e2a !important; background-color: #c41e2a !important; box-shadow: 0 4px 20px rgba(226, 55, 68, 0.5); color: white !important; }
 </style>
 """
 
@@ -303,55 +257,15 @@ st.set_page_config(
 
 st.markdown(STYLES, unsafe_allow_html=True)
 
-# Theme toggle using session state
-if "theme" not in st.session_state:
-    st.session_state.theme = "light"
-
-# Create columns for header layout
-header_col1, header_col2 = st.columns([6, 1])
-
-with header_col1:
-    st.markdown("""
-    <div class="main-header">
-      <h1 class="app-title">Zomato AI <span class="title-accent">Recommender</span></h1>
-      <p class="app-subtitle">Helping you find the best places to eat in Bangalore city</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-with header_col2:
-    # Theme toggle button
-    theme_icon = "🌙 Dark" if st.session_state.theme == "light" else "☀️ Light"
-    if st.button(theme_icon, key="theme_toggle", use_container_width=True):
-        st.session_state.theme = "dark" if st.session_state.theme == "light" else "light"
-        st.rerun()
-
-# Apply theme CSS
-if st.session_state.theme == "dark":
-    st.markdown("""
-    <style>
-    :root {
-      --bg-primary: #0f172a !important;
-      --bg-secondary: #1e293b !important;
-      --bg-gradient-start: #0f172a !important;
-      --bg-gradient-mid: #1e293b !important;
-      --bg-gradient-end: #0f172a !important;
-      --text-primary: #f8fafc !important;
-      --text-secondary: #cbd5e1 !important;
-      --text-muted: #94a3b8 !important;
-      --border-color: #334155 !important;
-      --card-bg: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%) !important;
-      --card-border: #475569 !important;
-      --why-bg: #334155 !important;
-      --accent-red: #f87171 !important;
-      --button-bg: #dc2626 !important;
-      --button-hover: #ef4444 !important;
-    }
-    div[data-testid="stAppViewContainer"] { background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important; color: #f8fafc !important; }
-    .stSelectbox label, .stMarkdown { color: #f8fafc !important; }
-    </style>
-    """, unsafe_allow_html=True)
-
 _inject_secrets_to_env()
+
+# --- Header ---
+st.markdown("""
+<div class="main-header">
+  <h1 class="app-title">Zomato AI <span class="title-accent">Recommender</span></h1>
+  <p class="app-subtitle">Helping you find the best places to eat in Bangalore city</p>
+</div>
+""", unsafe_allow_html=True)
 
 # --- Load locations & cuisines ---
 @st.cache_data(ttl=3600)  # Cache for 1 hour
