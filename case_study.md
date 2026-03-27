@@ -8,10 +8,6 @@
 
 ## 1. Executive Summary
 
-**Product:** Zomato AI Recommender  
-**Author:** [Your Name] | **Status:** [Draft / In Review / Complete]  
-**Last Updated:** [Date]
-
 Zomato AI Recommender is an AI-powered restaurant recommendation service designed to solve the "where should we eat?" problem for users in Bangalore. By combining traditional filtering (location, rating, price, cuisine) with Large Language Model (LLM) intelligence, the product delivers personalized, context-aware restaurant suggestions with natural-language reasoning.
 
 **Key Highlights:**
