@@ -6,21 +6,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Executive Summary](#1-executive-summary)
-2. [Problem Statement](#2-problem-statement)
-3. [Solution Overview](#3-solution-overview)
-4. [Technology Justification](#4-technology-justification)
-5. [Success Metrics](#5-success-metrics)
-6. [Risk Assessment](#6-risk-assessment)
-7. [Technical Architecture](#7-technical-architecture)
-8. [Go-to-Market Strategy](#8-go-to-market-strategy)
-9. [Lessons Learned & Roadmap](#9-lessons-learned--roadmap)
-10. [Conclusion](#10-conclusion)
-
----
-
 ## 1. Executive Summary
 
 **Product:** Zomato AI Recommender  
